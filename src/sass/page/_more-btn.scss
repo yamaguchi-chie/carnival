@@ -1,0 +1,59 @@
+@use 'global' as *;
+
+.list__btn {
+    max-width: rem(250);
+}
+
+.buy__btn {
+    max-width: rem(222);
+}
+
+.more-btn {
+    padding: rem(18) rem(13);
+    display: inline-block;
+    width: 100%;
+    border-radius: rem(30);
+    background-color: $gray1;
+    position: relative;
+    transition: all .3s ease 0s;
+    cursor: pointer;
+
+    @include mq() {
+        padding: rem(9) rem(10);
+    }
+}
+
+.more-btn::before,
+.more-btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.more-btn::before {
+    width: rem(34);
+    height: rem(34);
+    background-color: $red;
+    border-radius: 50%;
+    right: rem(13);
+}
+.more-btn::after {
+    background: transparent url(../images/common/ico-arrow.svg) no-repeat center center / cover;
+    width: rem(21);
+    height: rem(21);
+    right: rem(19);
+}
+
+.more-btn span {
+    display: inline-block;
+    color: $black1;
+    font-size: rem(16);
+    font-weight: $bold;
+    text-align: center;
+    transform: translateX(10%);
+
+    @include mq() {
+        position: static;
+        text-align: center;
+    }
+}
