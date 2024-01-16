@@ -4,12 +4,12 @@
 @if $startFrom == sp {
   //スマホファースト
   html {
-    //~375px
-    @media (max-width: 375px) {
-      font-size: vw(375, 16);
+    //~320px
+    @media (max-width: 320px) {
+      font-size: vw(320, 16);
     }
 
-    //375px~767px
+    //320px~767px
     font-size: 16px;
 
     @include mq("md") {
@@ -34,9 +34,9 @@
       font-size: 16px;
     }
 
-    //~375px
-    @media (max-width: 375px) {
-      font-size: vw(375, 16);
+    //~320px
+    @media (max-width: 320px) {
+      font-size: vw(320, 16);
     }
   }
 }
