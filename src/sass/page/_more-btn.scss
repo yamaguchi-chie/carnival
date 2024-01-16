@@ -1,5 +1,6 @@
 @use 'global' as *;
 
+//一例です。more-btnの親タグにmax-width をつけて横幅を指定してください。
 .list__btn {
     max-width: rem(250);
 }
