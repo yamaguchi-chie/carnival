@@ -1,0 +1,32 @@
+@use 'global' as *;
+
+.section-title {
+    text-align: center;
+    font-size: rem(26);
+    font-weight: $semi-bold;
+    letter-spacing: .1em;
+    padding-top: rem(27);
+    position: relative;
+
+    @include mq() {
+        font-size: rem(18);
+        letter-spacing: .07em;
+        padding-top: rem(18);
+    }
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $red;
+    height: rem(6);
+    width: rem(100);
+    
+    @include mq() {
+        height: rem(4);
+        width: rem(70);
+    }
+}
