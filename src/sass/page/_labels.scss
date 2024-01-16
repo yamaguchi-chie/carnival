@@ -1,0 +1,27 @@
+@use 'global' as *;
+
+.news__body {
+    max-width: $inner;
+}
+
+.labels {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: rem(21);
+    column-gap: rem(25);
+
+    @include mq() {
+        flex-direction: column;
+        row-gap: rem(16);
+    }
+}
+
+.labels__item {
+    width: calc(50% - rem(25) / 2);
+    // max-width: rem(458);
+
+    @include mq() {
+        width: 100%;
+    }
+}
