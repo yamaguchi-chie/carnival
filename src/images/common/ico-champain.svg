@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.623" height="29.629" viewBox="0 0 24.623 29.629">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eb6100;
+        stroke: rgba(0,0,0,0);
+        stroke-width: 0.6px;
+      }
+    </style>
+  </defs>
+  <g id="グループ_351" data-name="グループ 351" transform="translate(-99.851 -459.553)">
+    <path id="パス_155" data-name="パス 155" class="cls-1" d="M64.252,0H51.364L44.153,7.21V25.393h20.1V0ZM62.585,23.726H45.82V8.183h6.516V1.667H62.585V23.726Z" transform="translate(55.998 459.853)"/>
+    <rect id="長方形_159" data-name="長方形 159" class="cls-1" width="9.78" height="1.285" transform="translate(105.309 471.66)"/>
+    <rect id="長方形_160" data-name="長方形 160" class="cls-1" width="9.78" height="1.285" transform="translate(105.309 475.17)"/>
+    <rect id="長方形_161" data-name="長方形 161" class="cls-1" width="9.78" height="1.285" transform="translate(105.309 478.676)"/>
+    <rect id="長方形_162" data-name="長方形 162" class="cls-1" width="4.286" height="4.11" transform="translate(110.805 465.279)"/>
+    <path id="パス_156" data-name="パス 156" class="cls-1" d="M130.348,64.134V65.8h1.468V87.86H115.053V86.681h-1.667v2.846h20.1V64.134Z" transform="translate(-9.31 399.355)"/>
+  </g>
+</svg>
