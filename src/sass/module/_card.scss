@@ -1,0 +1,203 @@
+@use 'global' as *;
+
+.card {
+    position: relative;
+    background-color: $gray1;
+    border-bottom: rem(1) solid $yellow3;
+    display: flex;
+    flex-direction: column;
+    min-height: rem(618);
+
+    @include mq() {
+        max-width: rem(600);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.card__middle {
+    padding: rem(11) rem(20) 0;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $black1;
+}
+
+.card__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    // padding: rem(9) 0 rem(10);
+}
+
+// .card__heading {
+//     // content: "";
+//     width: rem(33);
+//     height: rem(33);
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: 1;
+// }
+
+.card__cat {
+    font-size: rem(14);
+    font-weight: $bold;
+    padding: rem(9) 0 rem(10) rem(18);
+    position: relative;
+    color: $black1;
+    background-color: $gray1;
+}   
+
+.card__cat::before {
+    mix-blend-mode: difference;
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: rem(33);
+    height: 100%;
+    // color: $white;
+    background: $white;
+}
+
+.card__kind {
+    font-size: rem(16);
+    font-weight: $bold;
+    padding-right: rem(20);
+}
+
+.card__top {
+    margin-top: rem(11);
+}
+
+.card__title {
+    font-size: rem(22);
+    font-weight: $bold;
+    line-height: calc(32 / 22);
+}
+
+.card__sub {
+    font-size: rem(18);
+    font-weight: $medium;
+    margin-top: rem(2);
+}
+
+.card__img {
+    margin-top: rem(8);
+    width: 100%;
+    aspect-ratio: 278/180;
+    position: relative;
+
+    @include mq() {
+        // aspect-ratio: 295/368;
+    }
+}
+
+.card__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.card__body {
+
+}
+
+.card__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__price>p {
+    margin-top: rem(8);
+}
+
+.card__mark {
+    
+}
+
+.card__mark>p {
+    color: $red;
+    font-size: rem(40);
+    font-weight: $bold;
+    display: inline-block;
+}
+
+.card__mark div {
+    display: inline-block;
+}
+
+.card__mark div p:nth-of-type(1) {
+    font-weight: $medium;
+    font-size: rem(12);
+}
+
+.card__mark div p:nth-of-type(2) {
+    font-weight: $bold;
+    font-size: rem(20);
+}
+
+.card__lists {
+
+}
+
+.card__item {
+    display: flex;
+    align-items: center;
+    padding: rem(2) 0;
+    border-top: rem(1) solid $black3;
+}
+
+.card__item:last-child {
+    border-bottom: rem(1) solid $black3;
+}
+
+.card__item p {
+    font-size: rem(18);
+    font-weight: $medium;
+    // line-height: calc(38 / 18);
+}
+
+.card__item p:nth-child(1) {
+    margin-left: rem(8);
+    max-width: calc(rem(72) + rem(48) + rem(8));
+    width: 50%;
+}
+
+.card__item p:nth-child(2) {
+    max-width: calc(100% - calc(rem(72) + rem(48) + rem(8)));
+}
+
+.card__text {
+    margin-top: rem(13);
+    font-size: rem(16);
+    font-weight: $medium;
+    line-height: calc(23 / 16);
+}
+
+.card__bottom {
+    margin-top: auto;
+    padding: 0 rem(20) rem(20);
+}   
+
+.card__shop {
+    text-align: center;
+    font-size: rem(20);
+    font-weight: $bold;
+    // line-height: calc(38 / 20);
+    margin-top: rem(20);
+}
+
+.card__btn {
+    max-width: rem(277);
+    text-align: center;
+    margin-top: rem(11);
+}

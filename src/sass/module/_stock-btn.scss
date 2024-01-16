@@ -1,0 +1,42 @@
+@use 'global' as *;
+
+.stock-btn {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background-color: $red;
+    //ボタン
+    border-radius: rem(25);
+    padding: rem(12) rem(18) rem(14);
+    //テキスト
+    text-align: center;
+    color: $white;
+    font-size: rem(16);
+    font-weight: $bold;
+    transition: all .3s ease 0s;
+    cursor: pointer;
+    
+    @include mq() {
+        font-size: rem(28);
+        padding: rem(21) rem(15) rem(22);
+    }
+}
+
+.stock-btn span {
+    margin-left: rem(18);
+}
+
+.stock-btn:hover {
+
+}
+
+.stock-btn::before {
+    content: "";
+    background: transparent url(../images/common/ico-mail.svg) no-repeat center center / cover;
+    height: rem(23);
+    width: rem(32);
+    position: absolute;
+    left: rem(18);
+    top: 50%;
+    transform: translateY(-50%);
+}

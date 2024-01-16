@@ -1,0 +1,24 @@
+@use 'global' as *;
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: rem(3);
+    row-gap: rem(85);
+    
+    @include mq() {
+        column-gap: 0;
+        flex-direction: column;
+        row-gap: rem(2);
+    }
+}
+
+//スマホ時の最大幅はその際の親要素につける。
+.cards__item {
+    width: calc(33.3333% - rem(3) * 2 / 3);
+    max-width: rem(318);
+
+    @include mq() {
+        width: 100%;
+    }
+}

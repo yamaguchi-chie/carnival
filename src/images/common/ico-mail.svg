@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.08" height="23.76" viewBox="0 0 32.08 23.76">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="グループ_59" data-name="グループ 59" transform="translate(6.398 0.33)">
+    <path id="パス_2" data-name="パス 2" class="cls-1" d="M30.872,4H5.208A3.09,3.09,0,0,0,2.016,6.97L2,24.79a3.1,3.1,0,0,0,3.208,2.97H30.872a3.1,3.1,0,0,0,3.208-2.97V6.97A3.1,3.1,0,0,0,30.872,4Zm0,20.79H5.208V9.94L18.04,17.365,30.872,9.94ZM18.04,14.4,5.208,6.97H30.872Z" transform="translate(-8.398 -4.33)"/>
+  </g>
+</svg>
