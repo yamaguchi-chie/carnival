@@ -1,0 +1,20 @@
+@use 'global' as *;
+
+.nums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: rem(5);
+    
+    @include mq() {
+        column-gap: rem(3);
+    }
+}
+
+//スマホ時の最大幅はその際の親要素につける。
+.nums__item {
+    
+    @include mq() {
+        
+    }
+}

@@ -1,0 +1,26 @@
+@use 'global' as *;
+
+.num__btn {
+    font-size: rem(18);
+    color: $black1;
+    font-weight: $medium;
+    border: rem(1) solid $border-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(45);
+    height: rem(45);
+
+    @include mq() {
+        font-size: rem(10);
+        width: rem(25);
+        height: rem(25);
+    }
+}
+
+
+.num__active{
+    background: $black2;
+    border: rem(1) solid $black2;
+    color: $white;
+}

@@ -1,0 +1,32 @@
+@use 'global' as *;
+
+
+.search-car__head{
+    padding: rem(67) 0 rem(120);
+
+    @include mq() {
+        padding: rem(45) 0 rem(30);
+    }
+}
+
+.search-car__search{
+    padding-bottom: rem(25);
+    border-bottom: rem(1) solid $border-gray;
+
+}
+
+.search-car__result-top{
+    margin: rem(85) 0 rem(80);
+
+    @include mq() {
+        margin: rem(50) 0 rem(50);
+    }
+}
+
+.search-car__result-bottom{
+    margin: rem(45) 0 rem(100);
+
+    @include mq() {
+        margin: rem(35) 0 rem(75);
+    }
+}
