@@ -1,0 +1,30 @@
+@use 'global' as *;
+
+/* info */
+
+.info {
+    display: flex;
+    padding: rem(18) 0;
+}
+
+.info__left {
+    width: calc(calc(rem(20) + rem(72) + rem(26)) / rem(371) * 100%);
+    padding-left: rem(20);
+}
+
+.info__left p {
+    font-size: rem(18);
+    font-weight: $bold;
+    color: $black2;
+}
+
+.info__right {
+    width: calc(100% - calc(rem(20) + rem(72) + rem(26)));
+}
+
+.info__right p,
+.info__right a {
+    font-size: rem(18);
+    font-weight: $medium;
+    color: $black2;
+}

@@ -1,0 +1,172 @@
+@use 'global' as *;
+
+.shop {
+    margin-top: rem(60);
+    margin-bottom: rem(120);
+
+    @include mq() {
+        
+    }
+}
+
+.shop__top {
+    text-align: center;
+    font-size: rem(30);
+    font-weight: $super-bold;
+    letter-spacing: .1em;
+}
+
+.shop__img {
+    margin-top: rem(20);
+    aspect-ratio: 960/595;
+}
+
+//店舗情報
+.shop__list {
+    margin-top: rem(80);
+}
+
+.shop__list .shop__body {
+    display: flex;
+    gap: rem(30);
+    margin-top: rem(40);
+}
+
+.shop__shopImage {
+    width: calc(rem(550) / rem(960) * 100%);
+}
+
+.shop__info {
+    width: calc(rem(371) / rem(960) * 100%);
+}
+
+//店舗でできること
+.shop__can {
+    margin-top: rem(80);
+}
+
+.shop__can .shop__body {
+    margin-top: rem(40);
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: rem(10);
+}
+
+.shop__ico {
+    width: calc(33.33%);
+    position: relative;
+    padding-left: calc(rem(7) + rem(39));
+}
+
+.shop__ico span {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: rem(39);
+    height: 100%;
+}
+
+.shop__ico:nth-child(1) span,
+.shop__ico:nth-child(3) span {  
+    background-image: url(../images/common/ico-car.svg);
+}
+.shop__ico:nth-child(2) span {
+    background-image: url(../images/common/ico-seven.svg);
+}
+.shop__ico:nth-child(4) span {
+    background-image: url(../images/common/ico-return.svg);
+}
+.shop__ico:nth-child(5) span {
+    background-image: url(../images/common/ico-setting.svg);
+}
+.shop__ico:nth-child(6) span {
+    background-image: url(../images/common/ico-maintenance.svg);
+}
+.shop__ico:nth-child(7) span {
+    background-image: url(../images/common/ico-insurance.svg);
+}
+.shop__ico:nth-child(8) span {
+    background-image: url(../images/common/ico-milk.svg);
+}
+.shop__ico:nth-child(9) span {
+    background-image: url(../images/common/ico-pet.svg);
+}
+.shop__ico:nth-child(10) span {
+    background-image: url(../images/common/ico-food.svg);
+}
+.shop__ico:nth-child(11) span {
+    background-image: url(../images/common/ico-wifi.svg);
+}
+.shop__ico:nth-child(12) span {
+    background-image: url(../images/common/ico-aed.svg);
+}
+.shop__ico:nth-child(13) span {
+    background-image: url(../images/common/ico-kids.svg);
+}
+
+.shop__ico p {
+    font-size: rem(18);
+    font-weight: $semi-bold;
+    line-height: calc(36 / 18);
+}
+
+//車両一覧
+.shop__cars {
+    margin-top: rem(73);
+}
+
+.shop__cars .shop__body {
+    margin-top: rem(80);
+}
+
+.shop__btn {
+    margin: rem(60) auto 0;
+    max-width: rem(250);
+}
+
+//お知らせキャンペーン
+.shop__news {
+    margin-top: rem(100);
+}
+
+.shop__news .shop__body {
+    margin-top: rem(73);
+}
+
+//アクセス
+.shop__access {
+    margin-top: rem(100);
+}
+
+.shop__access .shop__body {
+    margin-top: rem(40);
+}
+
+.shop__map {
+    aspect-ratio: 960/710;
+    position: relative;
+    max-width: rem(960);
+}
+
+.shop__map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.shop__accessImage {
+    margin: rem(40) auto 0;
+    max-width: rem(650);
+    aspect-ratio: 650/240;
+    width: 100%;
+}

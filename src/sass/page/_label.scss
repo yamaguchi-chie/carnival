@@ -1,7 +1,17 @@
 @use 'global' as *;
 
-.label {
+.label--new {
+    position: relative;
+}
 
+.label--new::after {
+    content: "";
+    position: absolute;
+    top: calc(rem(-5) + rem(-60));
+    left: 0;
+    background: transparent url(../images/common/ico-new.svg) no-repeat center center / cover;
+    width: rem(86);
+    height: rem(60);
 }
 
 .label__body {
