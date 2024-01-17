@@ -1,0 +1,40 @@
+@use 'global' as *;
+
+.sharyo{
+    display: flex;
+    flex-wrap: wrap;
+    border-left: rem(1) solid $border-gray;
+    border-top: rem(1) solid $border-gray;
+
+    @include mq() {
+
+    }
+}
+
+.sharyo__item{
+    width: calc(100% / 3);
+    border-right: rem(1) solid $border-gray;
+    border-bottom: rem(1) solid $border-gray;
+    display: flex;
+
+    @include mq() {
+        width: 100%;
+    }
+}
+
+.sharyo__item dt{
+    font-size: rem(16);
+    line-height: 1;
+    font-weight: $semi-bold;
+    background: $gray1;
+    width: rem(130);
+    border-right: rem(1) solid $border-gray;
+    padding: rem(12) 0 rem(12) rem(15);
+}
+
+.sharyo__item dd{
+    font-size: rem(16);
+    line-height: 1;
+    font-weight: $semi-bold;
+    padding: rem(12) 0 rem(12) rem(15);
+}

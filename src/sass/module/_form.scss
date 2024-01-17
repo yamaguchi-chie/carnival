@@ -20,7 +20,7 @@
     @include mq() {
         column-gap: 0;
         flex-direction: column;
-        row-gap: rem(21.4);
+        row-gap: rem(21);
         margin: 0 rem(10) rem(30);
     }
 }
@@ -44,7 +44,7 @@
 
     @include mq() {
         font-size: rem(14);
-        margin-bottom: rem(6.6);
+        margin-bottom: rem(7);
     }
 }
 
@@ -72,14 +72,14 @@
     height: rem(11);
     width: rem(14);
     position: absolute;
-    right: rem(20);
+    right: rem(19);
     top: 50%;
     transform: translateY(-50%);
 
     @include mq() {
-        right: rem(16.6);
-        height: rem(9.5);
-        width: rem(12.5);
+        right: rem(16);
+        height: rem(9);
+        width: rem(12);
     }
 }
 .form__select select{
@@ -88,7 +88,7 @@
     padding: rem(12) rem(19);
 
     @include mq() {
-        padding: rem(10.5) rem(16.6);
+        padding: rem(10) rem(16);
     }
 }
 
@@ -124,8 +124,8 @@
     width: rem(29);
 
     @include mq() {
-        height: rem(25.5);
-        width: rem(25.5);
+        height: rem(25);
+        width: rem(25);
     }
 }
 
@@ -170,7 +170,7 @@
     font-size: rem(16);
     font-weight: $bold;
     color: $border-gray;
-    margin-left: 1rem;
+    margin-left: rem(16);
 
     @include mq() {
         font-size: rem(12);

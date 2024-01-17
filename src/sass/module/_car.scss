@@ -1,0 +1,37 @@
+@use 'global' as *;
+
+
+.car{
+    margin-top: rem(67);
+    margin-bottom: rem(100);
+
+    @include mq() {
+        margin-top: rem(45);
+        margin-bottom: rem(75);
+    }
+}
+
+.car__top{
+    margin-bottom: rem(111);
+
+    @include mq() {
+        
+    }
+}
+
+.car__inner{
+    max-width: rem(930);
+}
+
+.car__middle{
+    margin-bottom: rem(86);
+
+    @include mq() {
+        
+    }
+}
+
+.car__btn{
+    max-width: rem(250);
+    margin: rem(86) auto 0;
+}

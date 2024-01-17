@@ -1,0 +1,158 @@
+@use 'global' as *;
+
+.shoplist {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: rem(21);
+    column-gap: rem(59);
+
+    @include mq() {
+        flex-direction: column;
+        row-gap: rem(40);
+    }
+}
+
+.shoplist__item{
+    width: calc(50% - rem(59) / 2);
+    border-top: rem(1) solid $black2;
+
+    @include mq() {
+        width: 100%;
+    }
+}
+
+.shoplist__body{
+    display: flex;
+    gap: rem(14);
+    margin-bottom: rem(8);
+    position: relative;
+
+    @include mq() {
+        gap: rem(8);
+        margin-bottom: rem(5.5);
+    }
+}
+
+.shoplist__image{
+    aspect-ratio: 150/110;
+    width: calc((150 / 450) * 100%);
+    position: relative;
+
+    @include mq() {
+        aspect-ratio: unset;
+        width: calc((110 / 280) * 100%);
+    }
+}
+
+.shoplist__image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+}
+
+.shoplist__title{
+    font-size: rem(20);
+    line-height: 1;
+    font-weight: $bold;
+    margin-top: rem(10);
+    margin-bottom: rem(11);
+
+    @include mq() {
+        font-size: rem(16);
+        margin: 0;
+        position: absolute;
+        left: 0;
+        bottom: calc(100% + rem(3));
+    }
+
+}
+
+.shoplist__address{
+    font-size: rem(16);
+    line-height: 1.375;
+    font-weight: $medium;
+    white-space: nowrap;
+
+    @include mq() {
+        font-size: rem(12);
+        line-height: 1.4;
+        white-space: wrap;
+        margin-top: rem(4);
+    }
+}
+
+.shoplist__info{
+    font-size: rem(16);
+    line-height: 1.375;
+    font-weight: $medium;
+
+    @include mq() {
+        font-size: rem(12);
+        line-height: 1.4;
+    }
+}
+
+.shoplist__tel{
+    display: flex;
+    align-items: center;
+    margin-top: rem(1.5);
+
+    @include mq() {
+        margin-top: rem(3.5);
+    }
+}
+
+.shoplist__tel span{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/common/ico-tel.svg);
+    display: inline-block;
+    width: rem(24);
+    height: rem(24);
+
+    @include mq() {
+        width: rem(18);
+        height: rem(18);
+    }
+}
+
+.shoplist__tel p{
+    font-size: rem(24);
+    line-height: 1;
+    font-weight: $bold;
+    margin-left: rem(6);
+
+    @include mq() {
+        font-size: rem(18);
+        margin-left: rem(4.6);
+    }
+}
+
+
+.shoplist__category {
+    display: flex;
+    align-items: center;
+    gap: rem(3);
+    margin-top: rem(7);
+
+    @include mq() {
+        
+    }
+}
+
+.shoplist__category p {
+    padding: rem(2) rem(4);
+    font-size: rem(12);
+    line-height: 1;
+    font-weight: $medium;
+    color: $red;
+    border: rem(1) solid $red;
+
+    @include mq() {
+        font-size: rem(10);
+        padding: rem(2) rem(5);
+    }
+}
