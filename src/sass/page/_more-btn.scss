@@ -20,7 +20,8 @@
     cursor: pointer;
 
     @include mq() {
-        padding: rem(9) rem(10);
+        padding: rem(8) rem(10);
+        text-align: center;
     }
 }
 
@@ -37,12 +38,24 @@
     background-color: $red;
     border-radius: 50%;
     right: rem(13);
+
+    @include mq() {
+        right: rem(10);
+        width: rem(23);
+        height: rem(23);
+    }
 }
 .more-btn::after {
     background: transparent url(../images/common/ico-arrow.svg) no-repeat center center / cover;
     width: rem(21);
     height: rem(21);
     right: rem(19);
+
+    @include mq() {
+        right: rem(15);
+        width: rem(14);
+        height: rem(14);
+    }
 }
 
 .more-btn span {
@@ -50,11 +63,11 @@
     color: $black1;
     font-size: rem(16);
     font-weight: $bold;
-    text-align: center;
+    // text-align: center;
     transform: translateX(10%);
 
     @include mq() {
-        position: static;
-        text-align: center;
+        transform: translateX(0);
+        font-size: rem(12);
     }
 }

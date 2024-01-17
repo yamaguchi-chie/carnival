@@ -12,6 +12,12 @@
     background: transparent url(../images/common/ico-new.svg) no-repeat center center / cover;
     width: rem(86);
     height: rem(60);
+
+    @include mq() {
+        top: calc(rem(-3) + rem(-36));
+        width: rem(51);
+        height: rem(36);
+    }
 }
 
 .label__body {

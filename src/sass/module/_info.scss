@@ -4,18 +4,30 @@
 
 .info {
     display: flex;
-    padding: rem(18) 0;
+    padding: rem(18) 0; 
+
+    @include mq() {
+        padding: rem(8) 0;
+    }
 }
 
 .info__left {
     width: calc(calc(rem(20) + rem(72) + rem(26)) / rem(371) * 100%);
     padding-left: rem(20);
+
+    @include mq() {
+        padding-left: rem(10);
+    }
 }
 
 .info__left p {
     font-size: rem(18);
     font-weight: $bold;
     color: $black2;
+    
+    @include mq() {
+        font-size: rem(14);
+    }
 }
 
 .info__right {
@@ -27,4 +39,8 @@
     font-size: rem(18);
     font-weight: $medium;
     color: $black2;
+
+    @include mq() {
+        font-size: rem(14);
+    }
 }

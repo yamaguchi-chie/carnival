@@ -23,6 +23,12 @@
     background: transparent url(../images/common/ico-new.svg) no-repeat center center / cover;
     width: rem(86);
     height: rem(60);
+
+    @include mq() {
+        top: calc(rem(-3) + rem(-36));
+        width: rem(51);
+        height: rem(36);
+    }
 }
 
 .card__middle {
@@ -196,6 +202,9 @@
 
 .card__btn {
     max-width: rem(277);
-    text-align: center;
-    margin-top: rem(11);
+    margin: rem(11) auto 0;
+
+    @include mq() {
+        margin-top: rem(12);
+    }
 }
