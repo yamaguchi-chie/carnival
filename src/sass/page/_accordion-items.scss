@@ -1,0 +1,5 @@
+@use 'global' as *;
+
+.accordion-items__one + .accordion-items__one {
+    margin-top: rem(20);
+}

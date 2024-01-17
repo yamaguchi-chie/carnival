@@ -1,0 +1,109 @@
+@use 'global' as *;
+
+.accordion {
+    border: rem(1) solid $black3;
+    
+    @include mq() {
+        
+    }
+}
+
+.accordion__q {
+    padding: rem(18) rem(30) rem(18) rem(27);
+    // background-color: rgba($color: $white, $alpha: .3);
+    position: relative;
+    transition: all .3s ease 0s;
+    cursor: pointer;
+    
+    @include mq() {
+        padding: rem(12) rem(15);
+        border-width: rem(3);
+    }
+}
+
+.accordion__q.js-open {
+    transition: all .3s ease 0s;
+}
+
+.accordion__q p {
+    padding-left: calc(rem(25) + rem(44));
+    font-size: rem(20);
+    font-weight: $semi-bold;
+    color: $red;
+    line-height: calc(28 / 20);
+    position: relative;
+
+    @include mq() {
+        font-size: rem(14);
+        line-height: calc(20 / 14);
+        padding-left: calc(rem(15) + rem(16));
+    }
+}
+
+//矢印
+.accordion__q p::before,
+.accordion__q p::after {
+    content: "";
+    background-color: $black2;
+    width: rem(5);
+    height: rem(25);
+    border-radius: rem(5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s ease 0s;
+
+    @include mq() {
+        height: rem(15);
+        top: 0;
+    }
+}
+
+.accordion__q p::after {
+    transform: rotate(90deg);
+}
+
+.accordion__q.js-open p::before {
+    transform: rotate(45deg);
+}
+
+.accordion__q.js-open p::after {
+    transform: rotate(-45deg);
+}
+
+.accordion__q p::before {
+    // background-color: $black;
+}
+
+.accordion__a p::before {
+
+    @include mq() {
+
+    }
+}
+
+.accordion__a {
+    display: none;
+    padding-bottom: rem(24);
+    
+    @include mq() {
+        padding-bottom: rem(8);
+    }
+}
+
+.accordion__a.js-open {
+    display: block;
+}
+
+.accordion__a p {
+    font-size: rem(18);
+    line-height: calc(29 / 18);
+    padding: rem(11) rem(30);
+    background-color: $gray1;
+    
+    @include mq() {
+        font-size: rem(12);
+        line-height: calc(20 / 12);
+        padding: rem(8) rem(11) rem(10);
+    }
+}
