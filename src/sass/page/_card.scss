@@ -57,6 +57,10 @@
     position: relative;
     color: $black1;
     background-color: $gray1;
+
+    @include mq() {
+        padding: rem(8) 0 rem(10) rem(16);
+    }
 }   
 
 .card__cat::before {
@@ -68,28 +72,51 @@
     width: rem(33);
     height: 100%;
     background: $white;
+
+    @include mq() {
+        width: rem(29);
+    }
 }
 
 .card__kind {
     font-size: rem(16);
     font-weight: $bold;
     padding-right: rem(20);
+
+    @include mq() {
+        font-size: rem(14); 
+        padding-right: rem(18);
+    }
 }
 
 .card__top {
     margin-top: rem(11);
+
+    @include mq() {
+        margin-top: rem(10);
+    }
 }
 
 .card__title {
     font-size: rem(22);
     font-weight: $bold;
     line-height: calc(32 / 22);
+
+    @include mq() {
+        font-size: rem(18);
+        line-height: calc(27 / 18);
+    }
 }
 
 .card__sub {
     font-size: rem(18);
     font-weight: $medium;
     margin-top: rem(2);
+
+    @include mq() {
+        margin-top: rem(3);
+        font-size: rem(14);
+    }
 }
 
 .card__img {
@@ -99,7 +126,7 @@
     position: relative;
 
     @include mq() {
-        // aspect-ratio: 295/368;
+        aspect-ratio: 244/158;
     }
 }
 
@@ -112,6 +139,9 @@
 
 .card__body {
 
+    @include mq() {
+        margin-top: rem(6);
+    }
 }
 
 .card__price {
@@ -122,6 +152,10 @@
 
 .card__price>p {
     margin-top: rem(8);
+
+    @include mq() {
+        margin-top: rem(6);
+    }
 }
 
 .card__mark {
@@ -133,6 +167,10 @@
     font-size: rem(40);
     font-weight: $bold;
     display: inline-block;
+
+    @include mq() {
+        font-size: rem(34);
+    }
 }
 
 .card__mark div {
@@ -142,11 +180,19 @@
 .card__mark div p:nth-of-type(1) {
     font-weight: $medium;
     font-size: rem(12);
+
+    @include mq() {
+        font-size: rem(10);
+    }
 }
 
 .card__mark div p:nth-of-type(2) {
     font-weight: $bold;
     font-size: rem(20);
+
+    @include mq() {
+        font-size: rem(17);
+    }
 }
 
 .card__lists {
@@ -168,16 +214,25 @@
     font-size: rem(18);
     font-weight: $medium;
     // line-height: calc(38 / 18);
+
+    @include mq() {
+        font-size: rem(15);
+    }
 }
 
 .card__item p:nth-child(1) {
     margin-left: rem(8);
     max-width: calc(rem(72) + rem(48) + rem(8));
     width: 50%;
+
+    @include mq() {
+        margin-left: rem(10);
+        max-width: calc(rem(56) + rem(49) + rem(10));
+    }
 }
 
 .card__item p:nth-child(2) {
-    max-width: calc(100% - calc(rem(72) + rem(48) + rem(8)));
+    // max-width: calc(100% - calc(rem(72) + rem(48) + rem(8)));
 }
 
 .card__text {
@@ -185,11 +240,21 @@
     font-size: rem(16);
     font-weight: $medium;
     line-height: calc(23 / 16);
+
+    @include mq() {
+        margin-top: rem(11);
+        font-size: rem(14);
+        line-height: calc(20 / 14);
+    }
 }
 
 .card__bottom {
     margin-top: auto;
     padding: 0 rem(20) rem(20);
+
+    @include mq() {
+        padding: 0 rem(18) rem(18);
+    }
 }   
 
 .card__shop {
@@ -198,6 +263,11 @@
     font-weight: $bold;
     // line-height: calc(38 / 20);
     margin-top: rem(20);
+
+    @include mq() {
+        font-size: rem(16);
+        margin-top: rem(17);
+    }
 }
 
 .card__btn {
@@ -206,5 +276,6 @@
 
     @include mq() {
         margin-top: rem(12);
+        width: calc(rem(247) / rem(280) * 100%);
     }
 }

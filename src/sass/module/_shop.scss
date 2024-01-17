@@ -86,12 +86,13 @@
 
 .shop__can .shop__body {
     margin-top: rem(40);
-    display: flex;
-    flex-wrap: wrap;
     row-gap: rem(10);
+    display: grid;
+    grid-template-columns: repeat(2, 38%) 24%;
 
     @include mq() {
         row-gap: rem(15);
+        display: flex;
         flex-direction: column;
         max-width: rem(200);
         margin-left: auto;
@@ -100,13 +101,8 @@
 }
 
 .shop__ico {
-    width: 33.33%;
     position: relative;
     padding-left: calc(rem(7) + rem(39));
-
-    @include mq() {
-        width: auto;
-    }
 }
 
 .shop__ico span {
@@ -245,10 +241,10 @@
     aspect-ratio: 960/710;
     position: relative;
     max-width: rem(960);
+    margin-left: auto;
+    margin-right: auto;
 
     @include mq() {
-        margin-left: calc(50vw - 50%);
-        margin-right: calc(50vw - 50%);
     }
 }
 
