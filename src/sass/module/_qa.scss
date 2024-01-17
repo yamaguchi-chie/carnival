@@ -1,0 +1,12 @@
+@use 'global' as *;
+
+.qa {
+    background-color: $yellow2;
+    padding-bottom: rem(60);
+}
+
+.qa__body {
+    margin-top: rem(44);
+    background-color: $white;
+    padding: rem(50);
+}

@@ -15,6 +15,10 @@
     }
 }
 
+.section-title--white {
+    color: $white;
+}
+
 .section-title::before {
     content: "";
     position: absolute;
