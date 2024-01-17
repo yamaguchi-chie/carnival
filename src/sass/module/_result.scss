@@ -1,0 +1,25 @@
+@use 'global' as *;
+
+.result{
+    margin-top: rem(85);
+
+    @include mq() {
+        margin-top: rem(50);
+    }
+}
+
+.result__top{
+    margin-bottom: rem(80);
+
+    @include mq() {
+        margin-bottom: rem(50);
+    }
+}
+
+.result__bottom{
+    margin-top: rem(45);
+
+    @include mq() {
+        margin-top: rem(25);
+    }
+}
