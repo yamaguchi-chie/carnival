@@ -1,0 +1,30 @@
+@use 'global' as *;
+
+.flows {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: rem(40);
+    
+    @include mq() {
+        row-gap: rem(24);
+    }
+}
+
+//スマホ時の最大幅はその際の親要素につける。
+.flows__item {
+    width: 100%;
+
+    @include mq() {
+        width: 100%;
+    }
+}
+
+.flows__btn{
+    max-width: rem(380);
+    margin: rem(74) auto 0;
+
+    @include mq() {
+        margin-top: rem(40);
+    }
+}

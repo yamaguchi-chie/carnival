@@ -1,0 +1,96 @@
+@use 'global' as *;
+
+.flow {
+    display: flex;
+    gap: rem(64);
+    position: relative;
+    
+    @include mq() {
+        gap: rem(24);
+    }
+}
+
+.flow::before{
+    content: "";
+    width: rem(1);
+    height: calc(100% - rem(55));
+    background-color: $red;
+    position: absolute;
+    left: rem(24);
+    bottom: rem(-20);
+
+    @include mq() {
+        height: calc(100% - rem(37));
+        left: rem(15);
+        bottom: rem(-12);
+    }
+}
+
+.flow:last-of-type::before{
+    display: none;
+}
+
+.flow__label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.flow__label span{
+    font-family: $second-font-family;
+    font-size: rem(26);
+    line-height: 1;
+    font-weight: $medium;
+    letter-spacing: 0.08em;
+    color: $yellow2;
+    margin-bottom: rem(0);
+
+    @include mq() {
+        font-size: rem(18);
+    }
+}
+
+.flow__label p{
+    font-family: $second-font-family;
+    font-size: rem(40);
+    line-height: 1;
+    font-weight: $bold;
+    letter-spacing: 0.08em;
+    color: $yellow2;
+
+    @include mq() {
+        font-size: rem(28);
+    }
+}
+
+.flow__body{
+    margin-top: rem(28);
+
+    @include mq() {
+        margin-top: rem(0);
+    }
+}
+
+.flow__title{
+    font-size: rem(20);
+    line-height: 1;
+    font-weight: $bold;
+    margin-bottom: rem(25);
+
+    @include mq() {
+        font-size: rem(14);
+        margin-bottom: rem(13);
+    }
+}
+
+.flow__desc{
+    font-size: rem(18);
+    line-height: 2;
+    font-weight: $medium;
+
+    @include mq() {
+        font-size: rem(12);
+        line-height: 1.6;
+    }
+}

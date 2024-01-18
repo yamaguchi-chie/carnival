@@ -1,0 +1,73 @@
+@use 'global' as *;
+
+.maintenance {
+    
+
+    @include mq() {
+        
+    }
+}
+
+.inner.maintenance__inner{
+    max-width: rem(930);
+
+    @include mq() {
+        max-width: rem(600);
+        padding-left: rem(30);
+        padding-right: rem(30);
+    }
+}
+
+.maintenance__top{
+    margin-top: rem(67);
+    margin-bottom: rem(100);
+
+    @include mq() {
+        margin-top: rem(45);
+        margin-bottom: rem(28);
+    }
+}
+
+.maintenance__body{
+    margin-top: rem(50);
+
+    @include mq() {
+        margin-top: rem(30);
+    }
+}
+
+.maintenance__new{
+    margin-top: rem(100);
+
+    @include mq() {
+        margin-top: rem(60);
+    }
+}
+
+.maintenance__used{
+    margin-top: rem(100);
+
+    @include mq() {
+        margin-top: rem(50);
+    }
+}
+
+.maintenance__flow{
+    margin-top: rem(160);
+
+    @include mq() {
+        margin-top: rem(50);
+    }
+}
+
+.maintenance__loan{
+    margin-top: rem(115);
+    padding: rem(100) 0 rem(111);
+    background: $gray1;
+
+    @include mq() {
+        margin-top: rem(40);
+        padding: rem(32) 0 rem(25);
+    }
+}
+

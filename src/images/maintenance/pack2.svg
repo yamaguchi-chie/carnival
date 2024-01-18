@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="218.626" height="98.867" viewBox="0 0 218.626 98.867">
+  <g id="グループ_3145" data-name="グループ 3145" transform="translate(-120.002 -1472)">
+    <g id="グループ_904" data-name="グループ 904" transform="translate(66.254 764.186)">
+      <g id="グループ_816" data-name="グループ 816">
+        <path id="パス_1301" data-name="パス 1301" d="M72.777,776.287,59.229,785.32l39.14,20.072V781.807"/>
+        <path id="パス_1302" data-name="パス 1302" d="M98.368,806.682a1.328,1.328,0,0,1-.59-.142L58.641,786.469a1.294,1.294,0,0,1-.128-2.225l13.548-9.033a1.293,1.293,0,0,1,1.434,2.151l-11.72,7.812,35.3,18.1V781.809a1.292,1.292,0,0,1,2.584,0V805.39a1.3,1.3,0,0,1-1.292,1.292Z"/>
+      </g>
+      <g id="グループ_817" data-name="グループ 817" transform="translate(224.486 707.815)">
+        <path id="パス_1303" data-name="パス 1303" d="M302.868,738.206l15.55-9.032L273.5,709.1v23.584" transform="translate(-272.011 -707.815)"/>
+        <path id="パス_1304" data-name="パス 1304" d="M303.06,739.5a1.561,1.561,0,0,1-1.234-.574,1.2,1.2,0,0,1,.411-1.793l13.452-7.812-40.521-18.1v21.473a1.5,1.5,0,0,1-2.966,0V709.1a1.262,1.262,0,0,1,.708-1.1,1.7,1.7,0,0,1,1.451-.05l44.925,20.071a1.289,1.289,0,0,1,.8,1.075,1.253,1.253,0,0,1-.657,1.15l-15.549,9.033A1.653,1.653,0,0,1,303.06,739.5Z" transform="translate(-272.202 -707.815)"/>
+      </g>
+    </g>
+    <rect id="長方形_380" data-name="長方形 380" width="213.138" height="56.201" transform="translate(338.621 1549.506) rotate(180)" fill="#fff"/>
+    <rect id="長方形_381" data-name="長方形 381" width="210.85" height="56.201" transform="translate(330.852 1544.984) rotate(180)" fill="#fdf6cb"/>
+    <path id="パス_1318" data-name="パス 1318" d="M271.287,786.611H59.02a1.2,1.2,0,0,1-1.082-1.292v-56.2a1.2,1.2,0,0,1,1.082-1.292H271.287a1.2,1.2,0,0,1,1.081,1.292v56.2A1.2,1.2,0,0,1,271.287,786.611ZM60.1,784.027H270.2V730.409H60.1Z" transform="translate(66.254 764.186)"/>
+    <text id="_2" data-name="2" transform="translate(165.09 1534.434)" stroke="rgba(0,0,0,0)" stroke-width="0.857" font-size="40" font-family="NotoSans-Black, Noto Sans" font-weight="800"><tspan x="-11.72" y="0">2</tspan></text>
+    <text id="年プラン" transform="translate(243.09 1531.434)" stroke="rgba(0,0,0,0)" stroke-width="0.857" font-size="30" font-family="HiraginoSans-W8, Hiragino Sans"><tspan x="-60" y="0">年プラン</tspan></text>
+  </g>
+</svg>

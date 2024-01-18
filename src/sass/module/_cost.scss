@@ -1,0 +1,136 @@
+@use 'global' as *;
+
+
+
+.cost__list {
+    display: flex;
+    gap: rem(20);
+    margin-bottom: rem(37);
+
+    @include mq() {
+        flex-wrap: wrap;
+        gap: rem(24) rem(10);
+        margin-bottom: rem(28);
+    }
+}
+
+.cost__item{
+    width: calc((100% - rem(20) * 3) / 4);
+
+    @include mq() {
+        width: calc((100% - rem(10) * 1) / 2);
+    }
+}
+
+.cost__cat{
+    font-size: rem(22);
+    line-height: 1;
+    font-weight: $bold;
+    text-align: center;
+    padding: rem(9) 0;
+    background: $yellow4;
+    margin-bottom: rem(5);
+
+    @include mq() {
+        font-size: rem(14);
+        padding: rem(5) 0;
+        margin-bottom: rem(4);
+    }
+}
+
+.cost__ex{
+    font-size: rem(16);
+    line-height: 1.6;
+    font-weight: $semi-bold;
+    margin-bottom: rem(18);
+
+    @include mq() {
+        font-size: rem(10);
+        margin-bottom: rem(8);
+    }
+}
+
+.cost__img{
+    height: rem(120);
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(8);
+
+    @include mq() {
+        height: rem(80);
+    }
+}
+
+.cost__img img{
+    width: unset;
+    height: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.cost__sum{
+    font-size: rem(16);
+    line-height: 1;
+    font-weight: $bold;
+    text-align: center;
+    color: $white;
+    padding: rem(2);
+    background: $black2;
+    margin-bottom: rem(6);
+
+    @include mq() {
+        font-size: rem(10);
+        margin-bottom: rem(5);
+    }
+}
+
+.cost__price{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    border-bottom: rem(1) solid $black3;
+    padding-bottom: rem(1);
+}
+
+.cost__price .num{
+    font-size: rem(40);
+    line-height: 1;
+    font-weight: $semi-bold;
+    margin-right: rem(3);
+    margin-bottom: rem(4);
+
+    @include mq() {
+        font-size: rem(25); 
+        margin-right: rem(2);
+    }
+}
+
+.cost__price .en{
+    font-size: rem(20);
+    line-height: 1;
+    font-weight: $bold;
+
+    @include mq() {
+        font-size: rem(12);
+    }
+}
+
+.cost__price .tax{
+    font-size: rem(16);
+    line-height: 1;
+    font-weight: $medium;
+
+    @include mq() {
+        font-size: rem(10);
+    }
+}
+
+.cost__note{
+    font-size: rem(16);
+    line-height: 1.6;
+    font-weight: $medium;
+
+    @include mq() {
+        font-size: rem(12);
+    }
+}

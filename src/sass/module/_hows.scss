@@ -3,6 +3,7 @@
 .hows {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     column-gap: rem(24);
     
     @include mq() {
