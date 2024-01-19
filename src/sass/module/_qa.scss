@@ -3,10 +3,19 @@
 .qa {
     background-color: $yellow2;
     padding-bottom: rem(60);
+    
+    @include mq() {
+        padding-bottom: rem(20);
+    }
 }
 
 .qa__body {
     margin-top: rem(44);
     background-color: $white;
     padding: rem(50);
+    
+    @include mq() {
+        margin-top: rem(26);
+        padding: rem(10);
+    }
 }
