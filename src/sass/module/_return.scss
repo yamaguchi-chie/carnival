@@ -1,0 +1,63 @@
+@use 'global' as *;
+
+.return {
+    
+
+    @include mq() {
+        
+    }
+}
+
+.inner.return__inner{
+    max-width: rem(930);
+
+    @include mq() {
+        max-width: rem(600);
+        padding-left: rem(30);
+        padding-right: rem(30);
+    }
+}
+
+.return__top{
+    margin-top: rem(67);
+    margin-bottom: rem(100);
+
+    @include mq() {
+        margin-top: rem(45);
+        margin-bottom: rem(28);
+    }
+}
+
+.return__body{
+    margin-top: rem(50);
+
+    @include mq() {
+        margin-top: rem(30);
+    }
+}
+
+.return__process{
+    margin-top: rem(160);
+
+    @include mq() {
+        margin-top: rem(90);
+    }
+}
+
+
+.return__flow{
+    margin-top: rem(90);
+
+    @include mq() {
+        margin-top: rem(50);
+    }
+}
+
+.return__qa{
+    margin-top: rem(120);
+
+    @include mq() {
+        margin-top: rem(60);
+    }
+    
+}

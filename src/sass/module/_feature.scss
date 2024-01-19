@@ -1,0 +1,76 @@
+@use 'global' as *;
+
+.feature__list {
+    display: flex;
+    gap: rem(21);
+
+    @include mq() {
+        flex-direction: column;
+        gap: rem(14);
+    }
+}
+
+.feature__item{
+    width: calc((100% - rem(21) * 2) / 3);
+    border: rem(2) solid $yellow2;
+    padding: rem(56) rem(32) rem(32);
+    position: relative;
+
+    @include mq() {
+        width: 100%;
+        padding: rem(22) rem(18) rem(14);
+    }
+}
+
+.feature__item::before{
+    content: "";
+    width: rem(72);
+    height: rem(72);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @include mq() {
+        
+    }
+}
+
+.feature__num{
+    font-size: rem(50);
+    line-height: 1;
+    font-weight: $bold;
+    color: $yellow2;
+    position: absolute;
+    top: rem(-4);
+    left: 0;
+
+    @include mq() {
+        font-size: rem(33);
+        left: rem(4);
+    }
+}
+
+.feature__title{
+    font-size: rem(22);
+    line-height: 1;
+    font-weight: $super-bold;
+    text-align: center;
+    color: $yellow3;
+    margin-bottom: rem(18);
+
+    @include mq() {
+        font-size: rem(18);
+        margin-bottom: rem(15);
+    }
+}
+
+.feature__desc{
+    font-size: rem(18);
+    line-height: 1.6;
+    font-weight: $medium;
+
+    @include mq() {
+        font-size: rem(14);
+    }
+}

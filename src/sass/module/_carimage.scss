@@ -1,0 +1,18 @@
+@use 'global' as *;
+
+.carimage__main{
+    margin-bottom: rem(28);
+
+    @include mq() {
+        
+    }
+}
+
+.carimage__sub{
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(6);
+}
+.carimage__item{
+    width: calc((100% - rem(6) * 8) / 9);
+}

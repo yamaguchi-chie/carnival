@@ -1,0 +1,211 @@
+@use 'global' as *;
+
+
+.detail__top{
+    margin-bottom: rem(10);
+
+    @include mq() {
+        
+    }
+}
+
+.detail__label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.detail__brand{
+    font-size: rem(20);
+    line-height: 1;
+    font-weight: $bold;
+}
+.detail__category{
+    font-size: rem(18);
+    line-height: 1;
+    color: $white;
+    text-align: center;
+    padding: rem(9) rem(32);
+    background: $black1;
+}
+
+.detail__title{
+    display: flex;
+    align-items: center;
+    padding-top: rem(17);
+    border-top: rem(2) solid $yellow3;
+}
+
+.detail__name{
+    font-size: rem(28);
+    line-height: 1;
+    font-weight: $bold;
+}
+.detail__namesub{
+    font-size: rem(22);
+    font-weight: $medium;
+    margin-left: rem(25);
+}
+
+.detail__middle{
+    display: flex;
+    gap: rem(30);
+    align-items: flex-end;
+
+    @include mq() {
+        flex-direction: column;   
+    }
+}
+
+.detail__image{
+    width: calc((500 / 880) * 100%);
+    flex-shrink: 0;
+
+    @include mq() {
+        width: 100%;
+    }
+}
+
+.detail__body{
+    
+}
+
+.detail__price{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: rem(14);
+    border-bottom: rem(1) solid $black3;
+}
+
+.detail__price dt{
+    font-size: rem(18);
+    font-weight: $medium;
+}
+
+.detail__price dd{
+    display: flex;
+    align-items: center;
+}
+
+.detail__price dd > p{
+    font-size: rem(55);
+    line-height: 1;
+    font-weight: $bold;
+    color: $red;
+    margin-right: rem(5);
+}
+
+.detail__price dd > div p:nth-of-type(1){
+    font-size: rem(14);
+    line-height: 1;
+    text-align: center;
+    margin-bottom: rem(5);
+}
+.detail__price dd > div p:nth-of-type(2){
+    font-size: rem(24);
+    line-height: 1;
+    font-weight: $bold;
+    text-align: center;
+}
+
+.detail__item{
+    display: flex;
+    padding: rem(3) 0 rem(3) rem(12);
+    border-bottom: rem(1) solid $black3;
+}
+
+.detail__item dt{
+    font-size: rem(20);
+    line-height: 1.4;
+    font-weight: $medium;
+    width: rem(144);
+}
+
+.detail__item dd{
+    font-size: rem(20);
+    line-height: 1.4;
+    font-weight: $medium;
+}
+
+.detail__desc{
+    font-size: rem(16);
+    font-weight: $medium;
+    line-height: 1.4;
+    margin-top: rem(10);
+    margin-bottom: rem(15);
+}
+
+.detail__shop{
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(10);
+}
+
+.detail__shop dt{
+    font-size: rem(20);
+    line-height: 1;
+    font-weight: $bold;
+    color: $red;
+    padding: rem(15) rem(6);
+    border: rem(2) solid $yellow3;
+    margin-right: rem(17);
+}
+
+.detail__shopname{
+    font-size: rem(20);
+    line-height: 1;
+    font-weight: $bold;
+}
+
+.detail__shoptel{
+    display: flex;
+    align-items: center;
+    margin-top: rem(5);
+}
+
+.detail__shoptel span{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/common/ico-tel.svg);
+    display: inline-block;
+    width: rem(33);
+    height: rem(33);
+}
+
+.detail__shoptel p{
+    font-size: rem(32);
+    line-height: 1;
+    font-weight: $bold;
+    margin-left: rem(5);
+}
+
+.detail__btn{
+    width: 100%;
+    height: rem(50);
+    border-radius: rem(30);
+    background: $red;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.detail__btn::before{
+    content: "";
+    background: transparent url(../images/common/ico-mail.svg) no-repeat center center / cover;
+    width: rem(32);
+    height: rem(23.7);
+    position: absolute;
+    top: 50%;
+    left: rem(18);
+    transform: translateY(-50%);
+}
+
+.detail__btn span{
+    font-size: rem(16);
+    font-weight: $bold;
+    color: $white;
+    transform: translateX(10%);
+}

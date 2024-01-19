@@ -1,0 +1,219 @@
+@use 'global' as *;
+
+.pack{
+    
+
+    @include mq() {
+        
+    }
+}
+
+.pack__box{
+    background-color: $yellow1;
+    padding: rem(20);
+    margin-bottom: rem(45);
+
+    @include mq() {
+        padding: rem(10);
+        margin-bottom: rem(30);
+    }
+}
+
+.pack__body{
+    border: rem(2) solid $white;
+}
+
+.pack__title{
+    font-size: rem(26);
+    line-height: 1;
+    font-weight: $bold;
+    text-align: center;
+    padding: rem(12);
+    background-color: $white;
+
+    @include mq() {
+        font-size: rem(20);
+        line-height: 1.3;
+        padding: rem(10);
+    }
+}
+
+.pack__detail{
+    padding: rem(24) rem(27) rem(20) rem(207);
+    position: relative;
+
+    @include mq() {
+        padding: rem(68) rem(17) rem(15);
+    }
+}
+
+.pack__labels{
+    position: absolute;
+    top: 50%;
+    left: rem(-48);
+    transform: translateY(-50%);
+
+    @include mq() {
+        top: 0;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        transform: translateX(-50%);
+        gap: rem(7);
+    }
+}
+
+.pack__label{
+    width: rem(218);
+
+    @include mq() {
+        width: rem(142);
+    }
+}
+
+
+.pack__baai{
+    font-size: rem(18);
+    line-height: 1;
+    font-weight: $bold;
+    margin-bottom: rem(7);
+
+    @include mq() {
+        font-size: rem(14);
+        margin-bottom: rem(10);
+    }
+}
+
+.pack__price{
+    font-size: rem(22);
+    font-weight: $bold;    
+    margin-bottom: rem(20);
+
+    @include mq() {
+        font-size: rem(18);
+        margin-bottom: rem(24);
+    }
+}
+
+.pack__price .red{
+    color: $red;
+    font-weight: $bold;
+}
+
+.pack__price .tax{
+    font-size: rem(18);
+    font-weight: $bold;
+
+    @include mq() {
+        font-size: rem(14);
+    }
+}
+
+.pack__title span{
+    font-weight: $semi-bold;
+}
+
+.pack__desc{
+    font-size: rem(18);
+    line-height: 1.6;
+    font-weight: $medium;
+
+    @include mq() {
+        font-size: rem(14);
+        line-height: 1.4;
+    }
+}
+
+.pack__flow{
+    display: flex;
+    gap: rem(21);
+
+    @include mq() {
+        flex-direction: column;
+        gap: rem(18);
+        margin-bottom: rem(30);
+    }
+}
+
+.pack__item{
+    width: calc((100% - rem(21) * 3) / 4);
+    margin-bottom: rem(24);
+
+    @include mq() {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        gap: rem(10);
+    }
+}
+
+.pack__item dt{
+    font-size: rem(24);
+    letter-spacing: 0.2em;
+    line-height: 1;
+    font-weight: $super-bold;
+    text-align: center;
+    color: $red;
+    padding: rem(25) 0;
+    border: rem(3) solid $yellow3;
+    margin-bottom: rem(10);
+    position: relative;
+
+    @include mq() {
+        font-size: rem(18);
+        width: calc((150 / 280) * 100%);
+        padding: rem(20) 0;
+        border: rem(2) solid $yellow3;
+        margin-bottom: 0;
+    }
+}
+
+.pack__item dt::after{
+    content: "";
+    background-color: $yellow3;
+    width: rem(24);
+    height: rem(32);
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include mq() {
+        width: rem(25);
+        height: rem(20);
+        clip-path: polygon(0 0, 100% 0%, 50% 100%);
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+    }
+}
+.pack__item:last-of-type dt::after{
+    display: none;
+}
+
+.pack__item dd{
+    font-size: rem(16);
+    line-height: 1.4;
+    font-weight: $semi-bold;
+    text-align: center;
+
+    @include mq() {
+        font-size: rem(12);
+        width: calc((120 / 280) * 100%);
+    }
+}
+
+.pack__note{
+    font-size: rem(16);
+    line-height: 1.6;
+    font-weight: $medium;
+    padding-top: rem(12);
+    border-top: rem(1) solid $black3;
+
+    @include mq() {
+        font-size: rem(12);
+        padding-top: rem(10);
+    }
+}

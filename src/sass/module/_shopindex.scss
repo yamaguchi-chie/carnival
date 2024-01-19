@@ -1,0 +1,64 @@
+@use 'global' as *;
+
+.shopindex {
+    margin-bottom: rem(90);
+
+    @include mq() {
+        margin-bottom: rem(40);
+    }
+}
+
+.shopindex__top{
+    margin-bottom: rem(80);
+    border-bottom: rem(1) solid $black3;
+
+    @include mq() {
+        margin-bottom: rem(42);
+        border-bottom: 0;
+        position: relative;
+    }
+}
+
+.shopindex__top::before{
+    display: none;
+
+    @include mq() {
+        content: "";
+        display: block;
+        position: absolute;
+        width: calc(100% - rem(40));
+        height: rem(1);
+        left: rem(20);
+        bottom: 0;
+        background: $black3;
+        transform: translateY(50%);
+    }
+}
+
+.shopindex__title{
+    font-size: rem(22);
+    font-weight: $semi-bold;
+    line-height: 1;
+    padding-bottom: rem(19);
+    position: relative;
+
+    @include mq() {
+        font-size: rem(16);
+        padding-bottom: rem(12.5);
+    }
+}
+
+.shopindex__title::before{
+    content: "";
+    position: absolute;
+    width: rem(180);
+    height: rem(3);
+    background-color: $red;
+    left: 0;
+    bottom: 0;
+    transform: translateY(50%);
+
+    @include mq() {
+        width: rem(120);
+    }
+}

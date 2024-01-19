@@ -1,0 +1,53 @@
+@use 'global' as *;
+
+.about{
+    
+}
+
+.about__desc{
+    font-size: rem(20);
+    font-weight: $semi-bold;
+    line-height: 2;
+    letter-spacing: -0.03em;
+    margin-bottom: rem(35);
+
+    @include mq() {
+        font-size: rem(14);
+        margin-bottom: rem(15);
+    }
+}
+
+.about__chigai{
+    border: rem(2) solid $yellow2;
+    margin-bottom: rem(100);
+
+    @include mq() {
+        margin-bottom: rem(60);
+    }
+}
+
+.about__chigai dt{
+    font-size: rem(22);
+    font-weight: $bold;
+    line-height: 1;
+    text-align: center;
+    color: $white;
+    padding: rem(6);
+    background-color: $yellow2;
+
+    @include mq() {
+        font-size: rem(14);
+    }
+}
+
+.about__chigai dd{
+    font-size: rem(18);
+    font-weight: $medium;
+    line-height: 1.6;
+    padding: rem(20) rem(30);
+
+    @include mq() {
+        font-size: rem(12);
+        padding: rem(11) rem(12) rem(13);
+    }
+}
