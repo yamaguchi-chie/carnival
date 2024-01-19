@@ -2,22 +2,16 @@
 
 .accordion {
     border: rem(1) solid $black3;
-    
-    @include mq() {
-        
-    }
 }
 
 .accordion__q {
     padding: rem(18) rem(30) rem(18) rem(27);
-    // background-color: rgba($color: $white, $alpha: .3);
     position: relative;
     transition: all .3s ease 0s;
     cursor: pointer;
     
     @include mq() {
-        padding: rem(12) rem(15);
-        border-width: rem(3);
+        padding: rem(8) rem(11);
     }
 }
 
@@ -49,13 +43,14 @@
     height: rem(25);
     border-radius: rem(5);
     position: absolute;
-    top: 0;
+    top: rem(3);
     left: 0;
     transition: all .3s ease 0s;
-
+    
     @include mq() {
+        width: rem(4);
         height: rem(15);
-        top: 0;
+        top: rem(3);
     }
 }
 
@@ -71,23 +66,12 @@
     transform: rotate(-45deg);
 }
 
-.accordion__q p::before {
-    // background-color: $black;
-}
-
-.accordion__a p::before {
-
-    @include mq() {
-
-    }
-}
-
 .accordion__a {
     display: none;
-    padding-bottom: rem(24);
+    padding: 0 rem(30) rem(24);
     
     @include mq() {
-        padding-bottom: rem(8);
+        padding: 0 rem(8) rem(8);
     }
 }
 
