@@ -13,8 +13,21 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
+@font-face { 
+  font-family: "teko";
+  src: url("/assets/font/teko-medium.ttf") format("truetype") 
+}
+
+@font-face { 
+  font-family: "akshar";
+  src: url("/assets/font/akshar-bold.ttf") format("truetype") 
+}
+
 $base-font-family: "Noto Sans", sans-serif;
-$second-font-family: "Teko", sans-serif;
+$second-font-family: "teko";
+$third-font-family: "akshar";
+
+
 // ※検証ツールでしっかり反映されているか確認する
 
 // フォントウェイト
