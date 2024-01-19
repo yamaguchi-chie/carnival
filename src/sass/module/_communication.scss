@@ -1,0 +1,30 @@
+@use 'global' as *;
+
+
+.communication{
+    margin-bottom: rem(136);
+
+    @include mq() {
+        margin-bottom: rem(75);    
+    }
+}
+
+.communication__top{
+    margin-top: rem(67);
+    margin-bottom: rem(120);
+
+    @include mq() {
+        margin-top: rem(45);
+        margin-bottom: rem(50);
+    }
+}
+
+.communication__body{
+    margin-top: rem(72);
+    margin-bottom: rem(90);
+
+    @include mq() {
+        margin-top: rem(40);
+        margin-bottom: rem(40);
+    }
+}
