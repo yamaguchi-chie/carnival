@@ -1,0 +1,144 @@
+@use 'global' as *;
+
+.case{
+
+    @include mq() {
+        
+    }
+}
+
+.case__title{
+    margin-bottom: rem(95);
+
+    @include mq() {
+        margin-bottom: rem(34);
+    }
+}
+
+.case__title span{
+    font-size: rem(30);
+    line-height: 1;
+    font-weight: $super-bold;
+    color: $red;
+    position: relative;
+    margin-bottom: rem(26);
+}
+
+.case__title p{
+    font-size: rem(36);
+    line-height: 1.5;
+    font-weight: $black-bold;
+    text-align: center;
+}
+
+.case__list{
+    display: flex;
+    flex-direction: column;
+    gap: rem(120);
+
+    @include mq() {
+        gap: rem(52);
+    }
+}
+
+.case__item{
+    position: relative;
+    padding-bottom: rem(70);
+
+    @include mq() {
+        padding-bottom: rem(20);
+    }
+}
+
+.case__item::after{
+    content: "";
+    height: calc(100% - rem(182));
+    width: 100%;
+    background-color: #DEDEDE;
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -2;
+
+    @include mq() {
+        height: calc(100% - rem(85));
+    }
+}
+
+.case__sample{
+    background-color: $white;
+    padding: rem(40) rem(30) rem(30);
+    border: rem(2) solid $yellow2;
+    position: relative;
+    margin-bottom: rem(30);
+
+    @include mq() {
+        padding: rem(32) rem(12) rem(12);
+        margin-bottom: rem(10);
+    }
+}
+
+.case__num{
+    width: rem(160);
+    position: absolute;
+    top: rem(-37);
+    left: rem(-40);
+
+    @include mq() {
+        width: rem(96);
+        top: rem(-24);
+        left: rem(-10);
+    }
+}
+
+.case__name{
+    font-size: rem(30);
+    line-height: 1.6;
+    font-weight: $super-bold;
+    text-align: center;
+    color: $yellow3;
+    padding-bottom: rem(24);
+    border-bottom: rem(1) solid $yellow2;
+    margin-bottom: rem(30);
+
+    @include mq() {
+        font-size: rem(18);
+        padding-bottom: rem(15);
+        margin-bottom: rem(15);
+    }
+}
+
+.case__detail{
+    font-size: rem(18);
+    letter-spacing: -0.03em;
+    line-height: 1.6;
+    font-weight: $semi-bold;
+
+    @include mq() {
+        font-size: rem(12);
+        letter-spacing: -0.02em;
+        margin: 0 rem(5);
+    }
+}
+
+.case__loan{
+    margin-bottom: rem(40);
+
+    @include mq() {
+        margin-bottom: rem(30);
+    }
+}
+
+.case__zangaku{
+    margin-bottom: rem(50);
+
+    @include mq() {
+        margin-bottom: rem(12);
+        margin-right: rem(-6);
+    }
+}
+
+.case__keiyaku{
+
+}

@@ -15,6 +15,18 @@
     }
 }
 
+.whatis__desc sup{
+    font-size: rem(12);
+
+    @include mq() {
+        font-size: rem(10);
+    }
+}
+
+.whatis__desc .red{
+    color: $red;
+}
+
 .whatis__chigai{
     border: rem(2) solid $yellow2;
     margin-top: rem(35);

@@ -1,0 +1,309 @@
+@use 'global' as *;
+
+.plan{
+    
+    @include mq() {
+        
+    }
+}
+
+
+.plan__box{
+    position: relative;
+    padding: 0 rem(50) rem(50);
+
+    @include mq() {
+        padding: 0 rem(18) rem(25);
+    }
+}
+
+.plan__box::before{
+    content: "";
+    height: calc(100% - rem(225));
+    width: 100%;
+    background-color: $yellow1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -2;
+
+    @include mq() {
+        height: calc(100% - rem(100));
+    }
+}
+
+.plan__box::after{
+    content: "";
+    height: calc(100% - rem(225) - rem(40));
+    width: calc(100% - rem(40));
+    border: rem(2) solid $white;
+    position: absolute;
+    left: rem(20);
+    bottom: rem(20);
+    z-index: -1;
+
+    @include mq() {
+        height: calc(100% - rem(100) - rem(16));
+        width: calc(100% - rem(16));
+        left: rem(8);
+        bottom: rem(8);
+    }
+}
+
+.plan__catch{
+    width: rem(450);
+    height: rem(450);
+    position: relative;
+    background-color: $yellow2;
+    border-radius: rem(450);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto rem(20);
+
+    @include mq() {
+        width: rem(280);
+        height: rem(280);
+        margin-bottom: rem(10);
+    }
+}
+
+.plan__catch .sub{
+    font-size: rem(26);
+    line-height: 1;
+    font-weight: $bold;
+    text-align: center;
+    margin-bottom: rem(11);
+
+    @include mq() {
+        font-size: rem(15);
+        margin-bottom: rem(8);
+    }
+}
+
+.plan__catch .main{
+    font-size: rem(34);
+    line-height: 1.6;
+    font-weight: $black-bold;
+    text-align: center;
+    color: $white;
+
+    @include mq() {
+        font-size: rem(21);
+    }
+}
+
+.plan__catch .plus{
+    width: rem(47);
+    height: rem(47);
+    position: relative;
+    margin: rem(14) 0;
+
+    @include mq() {
+        width: rem(29);
+        height: rem(29);
+        margin: rem(8) 0;
+    }
+}
+
+.plan__catch .plus::before,
+.plan__catch .plus::after{
+    content: "";
+    background-color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.plan__catch .plus::before{
+    width: 100%;
+    height: rem(4);
+}
+
+.plan__catch .plus::after{
+    width: rem(4);
+    height: 100%;
+}
+
+.plan__note{
+    font-size: rem(16);
+    line-height: 1.6;
+    font-weight: $medium;
+    display: table;
+    margin: 0 auto rem(37);
+
+    @include mq() {
+        font-size: rem(10);
+        margin-bottom: rem(10);
+    }
+}
+
+.plan__car{
+    max-width: rem(633);
+    margin: 0 auto rem(30);
+
+    @include mq() {
+        margin: 0 rem(-10) rem(23);
+    }
+}
+
+.plan__exp{
+    padding-top: rem(23);
+    border-top: rem(3) solid $white;
+    position: relative;
+    margin-bottom: rem(32);
+
+    @include mq() {
+        padding-top: rem(40);
+        border-top: rem(2) solid $white;
+        margin-bottom: rem(10);
+    }
+}
+
+.plan__img{
+
+    @include mq() {
+        margin: 0 rem(-10);
+    }
+}
+
+.plan__3{
+    width: rem(300);
+    position: absolute;
+    top: rem(36);
+    left: rem(-75);
+
+    @include mq() {
+        width: rem(140);
+        top: rem(12);
+        left: rem(-30);
+    }
+}
+
+.plan__next{
+    background-color: $white;
+    width: rem(210);
+    height: rem(70);
+    clip-path: polygon(0 0, 100% 0%, 50% 100%);
+    margin: 0 auto rem(12);
+    display: block;
+
+    @include mq() {
+        width: rem(96);
+        height: rem(32);
+    }
+}
+
+.plan__select{
+    font-size: rem(26);
+    line-height: 1.35;
+    font-weight: $black-bold;
+    text-align: center;
+    margin-bottom: rem(25);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(8);
+
+    @include mq() {
+        font-size: rem(12);
+        margin-bottom: rem(15);
+        gap: rem(0);
+    }
+}
+
+.plan__select::before,
+.plan__select::after{
+    content: "";
+    background-color: $black2;
+    width: rem(28);
+    height: rem(28);
+    display: block;
+
+    @include mq() {
+        width: rem(20);
+        height: rem(27);
+    }
+}
+
+.plan__select::before{
+    clip-path: polygon(40% 0%, 0 0, 100% 100%);
+}
+
+.plan__select::after{
+    clip-path: polygon(40% 0%, 100% 0, 0 100%);
+}
+
+.plan__list{
+    display: flex;
+    gap: rem(20);
+    margin-bottom: rem(40);
+
+    @include mq() {
+        flex-direction: column;
+        align-items: center;
+        gap: rem(15);
+        margin-bottom: rem(16);
+    }
+}
+
+.plan__item{
+    width: calc((100% - rem(20) * 2) / 3);
+    height: rem(60);
+    border: rem(2) solid $yellow2;
+    display: flex;
+
+    @include mq() {
+        width: rem(160);
+        height: rem(38);
+    }
+}
+
+.plan__item span{
+    font-family: $third-font-family;
+    font-size: rem(40);
+    line-height: 1;
+    font-weight: $bold;
+    color: $white;
+    background: $yellow2;
+    width: rem(60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    @include mq() {
+        font-size: rem(25);
+        width: rem(38);
+    }
+}
+
+.plan__item p{
+    font-size: rem(24);
+    line-height: 1;
+    font-weight: $bold;
+    color: $yellow3;
+    display: flex;
+    width: calc(100% - rem(60));
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+
+    @include mq() {
+        font-size: rem(15);
+        width: calc(100% - rem(38));
+    }
+}
+
+.plan__note2{
+    font-size: rem(16);
+    line-height: 1.6;
+    font-weight: $medium;
+
+    @include mq() {
+        font-size: rem(10);
+    }
+}
