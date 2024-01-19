@@ -2,52 +2,81 @@
 
 .about{
     
-}
-
-.about__desc{
-    font-size: rem(20);
-    font-weight: $semi-bold;
-    line-height: 2;
-    letter-spacing: -0.03em;
-    margin-bottom: rem(35);
 
     @include mq() {
-        font-size: rem(14);
-        margin-bottom: rem(15);
+        
     }
 }
 
-.about__chigai{
-    border: rem(2) solid $yellow2;
+.about__top{
+    margin-top: rem(67);
     margin-bottom: rem(100);
 
     @include mq() {
-        margin-bottom: rem(60);
+        margin-top: rem(45);
+        margin-bottom: rem(50);
     }
 }
 
-.about__chigai dt{
+
+.about__title{
     font-size: rem(22);
-    font-weight: $bold;
+    font-weight: $semi-bold;
     line-height: 1;
-    text-align: center;
-    color: $white;
-    padding: rem(6);
-    background-color: $yellow2;
+    padding-bottom: rem(19);
+    position: relative;
+    border-bottom: rem(1) solid $black3;
 
     @include mq() {
-        font-size: rem(14);
+        font-size: rem(16);
+        padding-bottom: rem(12.5);
     }
 }
 
-.about__chigai dd{
-    font-size: rem(18);
-    font-weight: $medium;
-    line-height: 1.6;
-    padding: rem(20) rem(30);
+.about__title::before{
+    content: "";
+    position: absolute;
+    width: rem(180);
+    height: rem(3);
+    background-color: $red;
+    left: 0;
+    bottom: 0;
+    transform: translateY(50%);
 
     @include mq() {
-        font-size: rem(12);
-        padding: rem(11) rem(12) rem(13);
+        width: rem(120);
+    }
+}
+
+.about__greeting{
+
+}
+
+.about__overview{
+    margin-top: rem(80);
+
+    @include mq() {
+        margin-top: rem(40);
+    }
+}
+
+.about__history{
+    margin-top: rem(80);
+
+    @include mq() {
+        margin-top: rem(40);
+    }
+}
+
+.about__award{
+    margin-top: rem(100);
+    padding-top: rem(32);
+    padding-bottom: rem(100);
+    background-color: $gray6;
+
+    @include mq() {
+        margin-top: rem(60);
+        padding-top: rem(25);
+        padding-bottom: rem(50);
     }
 }

@@ -24,26 +24,15 @@
 
     @include mq() {
         margin-top: rem(45);
-        margin-bottom: rem(28);
+        margin-bottom: rem(30);
     }
 }
 
 .inspection__body{
-    margin-top: rem(50);
+    margin-top: rem(60);
 
     @include mq() {
-        margin-top: rem(30);
-    }
-}
-
-.inspection__desc{
-    font-size: rem(20);
-    font-weight: $semi-bold;
-    line-height: 2;
-    letter-spacing: -0.03em;
-
-    @include mq() {
-        font-size: rem(14);
+        margin-top: rem(40);
     }
 }
 

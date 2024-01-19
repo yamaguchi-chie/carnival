@@ -1,0 +1,155 @@
+@use 'global' as *;
+
+.award{
+    
+}
+
+.award__top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(20);
+    margin-bottom: rem(50);
+
+    @include mq() {
+        flex-direction: column;
+        gap: rem(15);
+        margin-bottom: rem(32);
+    }
+}
+
+.award__img{
+    width: rem(204);
+
+    @include mq() {
+        width: rem(142);
+    }
+}
+
+.award__title{
+    font-size: rem(24);
+    line-height: 2;
+    font-weight: $bold;
+
+    @include mq() {
+        font-size: rem(14);
+        text-align: center;
+    }
+}
+
+.award__scroll{
+
+    @include mq() {
+        overflow-x: scroll;
+    }
+}
+
+.award__scrollinner{
+
+    @include mq() {
+        min-width: rem(540);
+        margin-bottom: rem(20);
+    }
+}
+
+.award__border{
+    display: flex;
+    height: rem(10);
+    margin-bottom: rem(10);
+
+    @include mq() {
+        height: rem(5);
+    }
+}
+
+.award__border span:nth-of-type(1){
+    width: calc((160 / 960) * 100%);
+    background-color: $red;
+
+    @include mq() {
+        width: calc((60 / 540) * 100%);
+    }
+}
+
+.award__border span:nth-of-type(2){
+    width: calc((250 / 960) * 100%);
+    background-color: $yellow3;
+
+    @include mq() {
+        width: calc((160 / 540) * 100%);
+    }
+}
+
+.award__border span:nth-of-type(3){
+    width: calc((550 / 960) * 100%);
+    background-color: $yellow6;
+
+    @include mq() {
+        width: calc((320 / 540) * 100%);
+    }
+}
+
+.award__list{
+    margin-top: rem(2);
+}
+
+.award__body{
+    display: flex;
+    padding: rem(20) 0;
+    border-bottom: rem(2) solid $white;
+}
+
+.award__year{
+    font-size: rem(20);
+    line-height: 1.44;
+    font-weight: $bold;
+    color: $red;
+    width: calc((160 / 960) * 100%);
+    padding-left: rem(16);
+
+    @include mq() {
+        font-size: rem(14);
+        line-height: 1.37;
+        width: calc((60 / 540) * 100%);
+        padding-left: 0;
+    }
+}
+
+.award__detail{
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+    width: calc((800 / 960) * 100%);
+    width: calc((480 / 540) * 100%);
+}
+
+.award__item{
+    width: 100%;
+    display: flex;
+}
+
+.award__item dt{
+    font-size: rem(18);
+    line-height: 1.6;
+    font-weight: $medium;
+    width: calc((250 / 800) * 100%);
+    flex-shrink: 0;
+
+    @include mq() {
+        font-size: rem(12);
+        width: calc((160 / 480) * 100%);
+    }
+}
+
+.award__item dd{
+    font-size: rem(18);
+    line-height: 1.6;
+    font-weight: $medium;
+    width: calc((550 / 800) * 100%);
+
+    @include mq() {
+        font-size: rem(12);
+        width: calc((320 / 480) * 100%);
+    }
+}
+

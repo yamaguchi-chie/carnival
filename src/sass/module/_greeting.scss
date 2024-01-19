@@ -1,0 +1,141 @@
+@use 'global' as *;
+
+.greeting{
+    
+}
+
+.greeting__body{
+    margin-top: rem(30);
+    display: flex;
+    margin-bottom: rem(45);
+
+    @include mq() {
+        margin-top: rem(23);
+        flex-direction: column;
+        margin-bottom: rem(41);
+    }
+}
+
+.greeting__catch{
+    font-size: rem(38);
+    letter-spacing: 0.12em;
+    line-height: 1;
+    font-weight: $super-bold;
+    white-space: nowrap;
+    word-break: keep-all;
+    writing-mode: vertical-rl;
+    display: inline-block;
+    margin-left: rem(60);
+    margin-right: rem(150);
+
+    @include mq() {
+        font-size: rem(24);
+        writing-mode: unset;
+        margin: 0 0 rem(22);
+    }
+}
+
+.greeting__catch span{
+    font-weight: $super-bold;
+    transform: translateX(28%);
+    display: inline-block;
+
+    @include mq() {
+        transform: unset;
+    }
+}
+
+.greeting__txt{
+    margin-top: rem(44);
+
+    @include mq() {
+        margin-top: rem(22);
+    }
+}
+
+.greeting__title{
+    font-size: rem(24);
+    font-weight: $bold;
+    line-height: 1;
+    margin-bottom: rem(24);
+
+    @include mq() {
+        font-size: rem(16);
+        line-height: 1.6;
+        margin-bottom: rem(16);
+    }
+}
+
+.greeting__message{
+    font-size: rem(20);
+    font-weight: $semi-bold;
+    line-height: 1.6;
+    margin-bottom: rem(26);
+
+    @include mq() {
+        font-size: rem(14);
+        margin-bottom: rem(20);
+    }
+}
+
+.greeting__sign{
+    margin-left: auto;
+    display: table;
+}
+
+.greeting__company{
+    font-size: rem(20);
+    font-weight: $semi-bold;
+    line-height: 1;
+    margin-bottom: rem(9);
+
+    @include mq() {
+        font-size: rem(14);
+        margin-bottom: rem(6);
+    }
+}
+
+.greeting__name{
+    display: flex;
+    align-items: center;
+}
+
+.greeting__name span{
+    font-size: rem(24);
+    letter-spacing: 0.1em;
+    line-height: 1;
+    font-weight: $semi-bold;
+    margin-right: rem(33);
+
+    @include mq() {
+        font-size: rem(16);
+        letter-spacing: 0.07em;
+        margin-right: rem(19);
+    }
+}
+
+.greeting__name p{
+    font-size: rem(44);
+    letter-spacing: 0.3em;
+    line-height: 1;
+    font-weight: $bold;
+
+    @include mq() {
+        font-size: rem(30);
+        letter-spacing: 0.2em;
+    }
+}
+
+.greeting__movie{
+    position: relative;
+    width: 100%;
+    padding: calc(315 / 560 * 100%) 0 0;
+}
+
+.greeting__movie iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

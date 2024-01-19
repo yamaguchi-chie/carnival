@@ -1,0 +1,79 @@
+@use 'global' as *;
+
+.error404 {
+    margin-bottom: rem(150);
+
+    @include mq() {
+        margin-bottom: rem(720);
+    }
+}
+
+.inner.error404__inner{
+    max-width: rem(930);
+
+    @include mq() {
+        max-width: rem(600);
+        padding-left: rem(30);
+        padding-right: rem(30);
+    }
+}
+
+.error404__top{
+    margin-top: rem(67);
+    margin-bottom: rem(145);
+
+    @include mq() {
+        margin-top: rem(45);
+        margin-bottom: rem(68);
+    }
+}
+
+.error404__title{
+    font-size: rem(36);
+    line-height: 1;
+    font-weight: $super-bold;
+    color: $yellow3;
+    margin-bottom: rem(36);
+
+    @include mq() {
+        font-size: rem(24);
+        line-height: 1.4;
+        margin-bottom: rem(30);
+    }
+}
+
+.error404__body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(94);
+
+    @include mq() {
+        flex-direction: column;
+        margin-bottom: rem(32);
+    }
+}
+
+.error404__desc{
+    font-size: rem(20);
+    line-height: 2;
+    font-weight: $semi-bold;
+
+    @include mq() {
+        font-size: rem(15);
+        margin-bottom: rem(25);
+    }
+}
+
+.error404__img{
+    width: rem(244);
+
+    @include mq() {
+        width: rem(184);
+    }
+}
+
+.error404__btn{
+    max-width: rem(250);
+    margin: 0 auto;
+}

@@ -1,6 +1,6 @@
 @use 'global' as *;
 
-.unused {
+.insurance {
     
 
     @include mq() {
@@ -8,7 +8,7 @@
     }
 }
 
-.inner.unused__inner{
+.inner.insurance__inner{
     max-width: rem(930);
 
     @include mq() {
@@ -18,7 +18,7 @@
     }
 }
 
-.unused__top{
+.insurance__top{
     margin-top: rem(67);
     margin-bottom: rem(100);
 
@@ -28,7 +28,7 @@
     }
 }
 
-.unused__body{
+.insurance__body{
     margin-top: rem(60);
 
     @include mq() {
@@ -36,25 +36,23 @@
     }
 }
 
-.unused__pros-cons{
-    margin-top: rem(160);
-
-    @include mq() {
-        margin-top: rem(90);
-    }
-}
-
-
-
-.unused__flow{
+.insurance__service{
     margin-top: rem(120);
 
     @include mq() {
-        margin-top: rem(50);
+        margin-top: rem(60);
     }
 }
 
-.unused__qa{
+.insurance__flow{
+    margin-top: rem(90);
+
+    @include mq() {
+        margin-top: rem(60);
+    }
+}
+
+.insurance__qa{
     margin-top: rem(120);
 
     @include mq() {
