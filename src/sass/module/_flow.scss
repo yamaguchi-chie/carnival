@@ -64,6 +64,10 @@
     }
 }
 
+.flow:first-of-type .flow__label p{
+    letter-spacing: 0.2em;
+}
+
 .flow__body{
     margin-top: rem(28);
 

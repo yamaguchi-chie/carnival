@@ -152,7 +152,7 @@
     border: rem(1) solid $red;
 
     @include mq() {
-        font-size: rem(10);
+        font-size: rem(12);
         padding: rem(2) rem(5);
     }
 }
