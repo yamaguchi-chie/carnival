@@ -15,7 +15,9 @@
     margin-bottom: rem(25);
     
     @include mq() {
-        
+        font-size: rem(16);
+        line-height: 1.6;
+        margin-bottom: rem(15);
     }
 }
 
@@ -24,6 +26,10 @@
     line-height: 2;
     font-weight: $medium;
     margin-bottom: rem(40);
+
+    @include mq() {
+        font-size: rem(14);
+    }
 }
 
 .service__optional{
@@ -34,4 +40,8 @@
     font-size: rem(16);
     line-height: 1.6;
     font-weight: $medium;
+
+    @include mq() {
+        font-size: rem(12);
+    }
 }
