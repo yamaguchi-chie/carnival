@@ -185,6 +185,20 @@
     }
 }
 
+.contact__agreement input[type=checkbox]{
+    display: block;
+    position: absolute;
+    opacity: 0;
+    width: rem(22);
+    height: rem(22);
+    margin: 0;
+
+    @include mq() {
+        width: rem(16);
+        height: rem(16);
+    }
+}
+
 .contact__agreement label{
     font-size: rem(18);
     line-height: 1;
