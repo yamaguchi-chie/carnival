@@ -1,0 +1,48 @@
+@use 'global' as *;
+
+.point{
+
+    @include mq() {
+        
+    }
+}
+
+.point__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(31) rem(27);
+
+    @include mq() {
+        gap: rem(12);
+    }
+}
+
+.point__item{
+    width: calc((100% - rem(27) * 3) /4);
+    border: rem(2) solid $yellow2;
+
+    @include mq() {
+        width: calc((100% - rem(12)) /2);
+    }
+}
+
+.point__img{
+    background-color: $yellow2;
+}
+
+.point__desc{
+    font-size: rem(18);
+    line-height: 1.4;
+    font-weight: $bold;
+    text-align: center;
+    background-color: $white;
+    height: rem(100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mq() {
+        font-size: rem(13);
+        height: rem(68);
+    }
+}

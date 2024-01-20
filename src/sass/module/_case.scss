@@ -71,11 +71,9 @@
     padding: rem(40) rem(30) rem(30);
     border: rem(2) solid $yellow2;
     position: relative;
-    margin-bottom: rem(30);
 
     @include mq() {
         padding: rem(32) rem(12) rem(12);
-        margin-bottom: rem(10);
     }
 }
 
@@ -114,6 +112,7 @@
     letter-spacing: -0.03em;
     line-height: 1.6;
     font-weight: $semi-bold;
+    margin: 0 rem(15);
 
     @include mq() {
         font-size: rem(12);
@@ -122,23 +121,50 @@
     }
 }
 
+.case__detail .red{
+    color: $red;
+}
+
 .case__loan{
-    margin-bottom: rem(40);
+    margin-top: rem(30);
 
     @include mq() {
-        margin-bottom: rem(30);
+        margin-top: rem(10);
     }
 }
 
 .case__zangaku{
-    margin-bottom: rem(50);
+    margin-top: rem(40);
 
     @include mq() {
-        margin-bottom: rem(12);
+        margin-top: rem(30);
         margin-right: rem(-6);
     }
 }
 
 .case__keiyaku{
+    margin-top: rem(50);
 
+    @include mq() {
+        margin-top: rem(12);
+    }
+}
+
+.case__shiharai{
+    margin-top: rem(30);
+
+    @include mq() {
+        margin-top: rem(10);
+    }
+}
+
+.case__note{
+    font-size: rem(16);
+    line-height: 1.6;
+    font-weight: $medium;
+    margin-top: rem(10);
+
+    @include mq() {
+        font-size: rem(10);
+    }
 }
