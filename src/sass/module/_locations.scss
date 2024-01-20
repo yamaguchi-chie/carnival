@@ -1,0 +1,27 @@
+@use 'global' as *;
+
+.locations{
+    margin-bottom: rem(80);
+
+    @include mq() {
+        margin-bottom: rem(62);
+    }
+}
+
+.locations__top{
+    margin-top: rem(67);
+    margin-bottom: rem(100);
+
+    @include mq() {
+        margin-top: rem(45);
+        margin-bottom: rem(50);
+    }
+}
+
+.locations__map{
+    margin-top: rem(40);
+
+    @include mq() {
+        margin-top: rem(34);
+    }
+}

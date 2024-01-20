@@ -1,0 +1,70 @@
+@use 'global' as *;
+
+.privacy {
+    margin-bottom: rem(200);
+
+    @include mq() {
+        
+    }
+}
+
+.inner.privacy__inner{
+    max-width: rem(930);
+
+    @include mq() {
+        max-width: rem(600);
+        padding-left: rem(30);
+        padding-right: rem(30);
+    }
+}
+
+.privacy__top{
+    margin-top: rem(67);
+    margin-bottom: rem(130);
+
+    @include mq() {
+        margin-top: rem(45);
+        margin-bottom: rem(48);
+    }
+}
+
+.privacy__desc{
+    font-size: rem(20);
+    line-height: 2;
+    font-weight: $semi-bold;
+    margin-bottom: rem(50);
+
+    @include mq() {
+        font-size: rem(14);
+        margin-bottom: rem(36);
+    }
+}
+
+.privacy__title{
+    font-size: rem(22);
+    line-height: 1.4;
+    text-align: center;
+    font-weight: $semi-bold;
+    color: $red;
+    padding: rem(8);
+    border: rem(2) solid $yellow2;
+    margin-top: rem(40);
+    margin-bottom: rem(20);
+
+    @include mq() {
+        font-size: rem(16);
+        margin-top: rem(30);
+        margin-bottom: rem(15);
+    }
+}
+
+.privacy__detail{
+    font-size: rem(16);
+    line-height: 1.8;
+    letter-spacing: -0.03em;
+    font-weight: $medium;
+
+    @include mq() {
+        font-size: rem(12);
+    }
+}

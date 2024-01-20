@@ -24,15 +24,15 @@
 
     @include mq() {
         margin-top: rem(45);
-        margin-bottom: rem(28);
+        margin-bottom: rem(30);
     }
 }
 
 .unused__body{
-    margin-top: rem(50);
+    margin-top: rem(60);
 
     @include mq() {
-        margin-top: rem(30);
+        margin-top: rem(40);
     }
 }
 

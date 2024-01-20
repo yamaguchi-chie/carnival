@@ -1,0 +1,149 @@
+@use 'global' as *;
+
+.what{
+    background-image: url(../images/what/bg_what.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: rem(140);
+
+    @include mq() {
+        padding-bottom: rem(50);
+    }
+}
+
+.what__top{
+    padding-top: rem(67);
+    margin-bottom: rem(100);
+
+    @include mq() {
+        padding-top: rem(45);
+        margin-bottom: rem(50);
+    }
+}
+
+.what__body{
+    padding-bottom: rem(192);
+    position: relative;
+
+    @include mq() {
+        padding-bottom: rem(0);
+    }
+}
+
+.what__desc{
+    font-size: rem(20);
+    line-height: 1.6;
+    font-weight: $semi-bold;
+    position: relative;
+    z-index: 2;
+
+    @include mq() {
+        font-size: rem(14);
+    }
+}
+
+.what__img{
+    width: rem(650);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    @include mq() {
+        width: 100%;
+        position: unset;
+    }
+}
+
+.what__message{
+    margin-top: rem(70);
+
+    @include mq() {
+        margin-top: rem(50);
+    }
+}
+
+.what__messageTxt{
+    font-size: rem(20);
+    line-height: 2;
+    font-weight: $semi-bold;
+    margin-top: rem(50);
+    margin-bottom: rem(50);
+
+    @include mq() {
+        font-size: rem(14);
+        margin-top: rem(28);
+        margin-bottom: rem(20);
+    }
+}
+
+.what__messageName{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.what__messageName span{
+    font-size: rem(22);
+    letter-spacing: 0.1em;
+    line-height: 1;
+    font-weight: $semi-bold;
+    margin-right: rem(29);
+
+    @include mq() {
+        font-size: rem(15);
+        letter-spacing: 0.07em;
+        margin-right: rem(19);
+    }
+}
+
+.what__messageName p{
+    font-size: rem(44);
+    letter-spacing: 0.3em;
+    line-height: 1;
+    font-weight: $bold;
+
+    @include mq() {
+        font-size: rem(30);
+        letter-spacing: 0.21em;
+    }
+}
+
+.what__character{
+    margin-top: rem(160);
+
+    @include mq() {
+        margin-top: rem(77);
+    }
+}
+
+.what__characterBody{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mq() {
+        flex-direction: column-reverse;
+    }
+}
+
+.what__characterImage{
+    width: rem(227);
+    margin-right: rem(62);
+    flex-shrink: 0;
+
+    @include mq() {
+        width: rem(160);
+        margin: 0 auto;
+    }
+}
+
+.what__characterTxt{
+    font-size: rem(20);
+    line-height: 1.6;
+    font-weight: $semi-bold;
+
+    @include mq() {
+        font-size: rem(14);
+        margin-bottom: rem(11);
+    }
+}

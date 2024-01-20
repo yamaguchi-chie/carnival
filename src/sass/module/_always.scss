@@ -1,0 +1,114 @@
+@use 'global' as *;
+
+.always{
+    margin-bottom: rem(30);
+}
+
+.always__list{
+
+    @include mq() {
+        display: flex;
+        flex-direction: column;
+        gap: rem(35);
+    }
+}
+
+.always__item{
+    height: rem(600);
+    position: relative;
+
+    @include mq() {
+        display: flex;
+        flex-direction: column-reverse;
+        height: unset;
+    }
+}
+
+.always__bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    @include mq() {
+        position: unset;
+        margin-bottom: rem(20);
+    }
+}
+
+.always__bg img{
+    height: 100%;
+    object-fit: cover;
+
+    @include mq() {
+        height: auto;
+    }
+}
+
+.always__inner{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    @include mq() {
+        flex-direction: column;
+    }
+}
+
+.always__item:nth-of-type(2) .always__inner{
+    flex-direction: row-reverse;
+
+    @include mq() {
+        flex-direction: column;
+    }
+}
+
+.always__body{
+    width: rem(450);
+    margin-top: rem(50);
+
+    @include mq() {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.always__en{
+    font-family: $second-font-family;
+    font-size: rem(50);
+    letter-spacing: 0.08em;
+    line-height: 1;
+    font-weight: $medium;
+    color: $red;
+    margin-bottom: rem(10);
+
+    @include mq() {
+        font-size: rem(32);
+        letter-spacing: 0.056em;
+        margin-bottom: rem(12);
+    }
+}
+
+.always__catch{
+    font-size: rem(22);
+    line-height: 1.8;
+    font-weight: $bold;
+    margin-bottom: rem(30);
+
+    @include mq() {
+        font-size: rem(15);
+        margin-bottom: rem(15);
+    }
+}
+
+.always__desc{
+    font-size: rem(18);
+    line-height: 2;
+    font-weight: $medium;
+
+    @include mq() {
+        font-size: rem(14);
+    }
+}

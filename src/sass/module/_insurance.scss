@@ -1,0 +1,62 @@
+@use 'global' as *;
+
+.insurance {
+    
+
+    @include mq() {
+        
+    }
+}
+
+.inner.insurance__inner{
+    max-width: rem(930);
+
+    @include mq() {
+        max-width: rem(600);
+        padding-left: rem(30);
+        padding-right: rem(30);
+    }
+}
+
+.insurance__top{
+    margin-top: rem(67);
+    margin-bottom: rem(100);
+
+    @include mq() {
+        margin-top: rem(45);
+        margin-bottom: rem(30);
+    }
+}
+
+.insurance__body{
+    margin-top: rem(60);
+
+    @include mq() {
+        margin-top: rem(40);
+    }
+}
+
+.insurance__service{
+    margin-top: rem(120);
+
+    @include mq() {
+        margin-top: rem(60);
+    }
+}
+
+.insurance__flow{
+    margin-top: rem(90);
+
+    @include mq() {
+        margin-top: rem(60);
+    }
+}
+
+.insurance__qa{
+    margin-top: rem(120);
+
+    @include mq() {
+        margin-top: rem(60);
+    }
+    
+}

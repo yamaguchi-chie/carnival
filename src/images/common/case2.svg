@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="161.352" height="80.768" viewBox="0 0 161.352 80.768">
+  <g id="グループ_781" data-name="グループ 781" transform="translate(-262.816 -3152.826)">
+    <g id="グループ_756" data-name="グループ 756" transform="translate(86.276 3267.581)">
+      <g id="グループ_755" data-name="グループ 755" transform="translate(177.29 -114.003)">
+        <path id="パス_1248" data-name="パス 1248" d="M691.765,448.617a39.443,39.443,0,0,0-30.173,12.822,11.011,11.011,0,0,1-11.817,2.961,24.791,24.791,0,0,0-8.157-1.376H595.743a25.287,25.287,0,0,0-25.214,25.214h0a25.287,25.287,0,0,0,25.214,25.214h45.875a24.8,24.8,0,0,0,8.057-1.342,11.1,11.1,0,0,1,11.89,2.9,39.6,39.6,0,0,0,68.751-28.924A39.9,39.9,0,0,0,691.765,448.617Z" transform="translate(-570.529 -448.604)" fill="#ffb423" stroke="rgba(0,0,0,0)" stroke-width="1.5"/>
+        <g id="グループ_754" data-name="グループ 754" transform="translate(92.196 11.618)">
+          <ellipse id="楕円形_1051" data-name="楕円形 1051" cx="28.015" cy="28.015" rx="28.015" ry="28.015" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1.5"/>
+          <g id="グループ_753" data-name="グループ 753" transform="translate(16.193 13.287)">
+            <path id="パス_1254" data-name="パス 1254" d="M648.647,498.389v-5.252l4.336-3.8c6.357-5.49,9.585-8.765,9.633-11.944,0-2.266-1.493-3.9-4.672-3.9a11.831,11.831,0,0,0-6.7,2.553l-2.36-6.215a18.751,18.751,0,0,1,10.79-3.273c7.272,0,11.606,3.947,11.606,10.113,0,5.007-3.563,9.053-7.272,12.089l-3.083,2.409v.094h10.885v7.13Z" transform="translate(-648.647 -466.553)" fill="#ffb423" stroke="rgba(0,0,0,0)" stroke-width="1.5"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <text id="CASE" transform="translate(309 3201.997)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="0.857" font-size="27" font-family="NotoSans-ExtraBold, Noto Sans" font-weight="800"><tspan x="-33.318" y="0">CASE</tspan></text>
+  </g>
+</svg>

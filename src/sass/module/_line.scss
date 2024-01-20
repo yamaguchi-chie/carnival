@@ -1,0 +1,113 @@
+@use 'global' as *;
+
+.line{
+    
+
+    @include mq() {
+        
+    }
+}
+
+.line__ico-qr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(42);
+    margin-bottom: rem(30);
+}
+
+.line__ico{
+    width: rem(164);
+}
+
+.line__qr{
+    width: rem(186);
+}
+
+.line__btn{
+    max-width: rem(390);
+    height: rem(60);
+    border-radius: rem(30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto rem(27);
+    border: rem(1) solid $green;
+    position: relative;
+
+    @include mq() {
+        height: rem(60);
+        background: $green;
+        margin-bottom: rem(20);
+    }
+}
+
+.line__btn::before{
+
+    @include mq() {
+        content: "";
+        background: transparent url(../images/common/ico-line.svg) no-repeat center center / contain;
+        width: rem(58);
+        height: rem(58);
+        position: absolute;
+        top: 50%;
+        left: rem(18);
+        transform: translateY(-50%);
+    }
+}
+
+.line__btn span{
+    font-size: rem(20);
+    font-weight: $bold;
+    color: $green;
+
+    @include mq() {
+        font-size: rem(16);
+        line-height: 1.4;
+        color: $white;
+        transform: translateX(10%);
+    }
+}
+
+.line__mail{
+    font-size: rem(16);
+    line-height: 1;
+    font-weight: $bold;
+    text-align: center;
+    position: relative;
+
+    @include mq() {
+        font-size: rem(12);
+    }
+}
+
+.line__mail::before,
+.line__mail::after{
+    content: "";
+    background: transparent url(../images/contact/ico-arrow.svg) no-repeat center center / contain;
+    width: rem(24);
+    height: rem(14);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include mq() {
+        width: rem(26);
+        height: rem(10);
+    }
+}
+
+.line__mail::before{
+    bottom: rem(-24);
+
+    @include mq() {
+        bottom: rem(-22);
+    }
+}
+.line__mail::after{
+    bottom: rem(-34);
+
+    @include mq() {
+        bottom: rem(-30);
+    }
+}

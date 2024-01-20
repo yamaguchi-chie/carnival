@@ -1,0 +1,93 @@
+@use 'global' as *;
+
+
+.cars{
+    
+
+    @include mq() {
+        
+    }
+}
+
+.cars__title{
+    display: flex;
+    align-items: center;
+    margin-top: rem(24);
+    margin-bottom: rem(8);
+
+    @include mq() {
+        margin-top: rem(18);
+        margin-bottom: rem(2);
+    }
+}
+
+.cars__title .label{
+    background: transparent url(../images/common/ico-new.svg) no-repeat center center / contain;
+    width: rem(86);
+    height: rem(60);
+    margin-right: rem(17);
+
+    @include mq() {
+        width: rem(51);
+        height: rem(36);
+        margin-right: rem(7);
+    }
+}
+
+.cars__title .main{
+    font-size: rem(24);
+    letter-spacing: 0.5em;
+    line-height: 1;
+    font-weight: $bold;
+
+    @include mq() {
+        font-size: rem(15);
+        letter-spacing: 0.325em;
+    }
+}
+
+.cars__title .sub{
+    font-size: rem(18);
+    letter-spacing: 0;
+    line-height: 1;
+    font-weight: $bold;
+    
+    @include mq() {
+        font-size: rem(12);
+    }
+}
+
+.cars__list{
+    display: flex;
+    gap: rem(42);
+
+    @include mq() {
+        gap: rem(11);
+    }
+}
+
+.cars__item{
+    position: relative;
+    width: calc((100% - rem(42) * 2) / 3);
+
+    @include mq() {
+        width: calc((100% - rem(11)) / 2);
+    }
+}
+
+.cars__item + .cars__item::before{
+    content: "";
+    display: block;
+    width: rem(1);
+    height: 100%;
+    background-color: $black3;
+    position: absolute;
+    left: rem(-21);
+    top: 0;
+
+    @include mq() {
+        display: none;
+    }
+}
+
+
