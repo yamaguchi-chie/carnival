@@ -1,10 +1,11 @@
 @use 'global' as *;
 
 .contact{
-    margin-bottom: rem(186);
+    padding-bottom: rem(186);
+    border-bottom: rem(1) solid $black3;
 
     @include mq() {
-        margin-bottom: rem(70);
+        padding-bottom: rem(70);
     }
 }
 
