@@ -22,3 +22,14 @@ $('.accordion__q').on('click', function() {
 });
 
 });
+
+jQuery(function ($) {
+
+$('.header__navSp').on('click', function() {
+  var opened = 'is--opened';
+  var active = 'is--active';
+
+  $('.header__navListSp').toggleClass(active);
+  $('.header__navSp').toggleClass(opened);
+});
+});
