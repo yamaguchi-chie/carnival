@@ -1,0 +1,148 @@
+@use 'global' as *;
+
+.about{
+    
+
+    @include mq() {
+        
+    }
+}
+
+.home__top{
+    
+
+    @include mq() {
+        
+    }
+}
+
+.home__newsbox{
+    padding: rem(10) rem(16) rem(10);
+    border: rem(1) solid $black2;
+
+    @include mq() {
+        padding: rem(8);
+    }
+}
+
+.home__newsTitle{
+    font-size: rem(20);
+    letter-spacing: 0.3em;
+    line-height: 1;
+    font-weight: $semi-bold;
+    margin-bottom: rem(10);
+
+    @include mq() {
+        font-size: rem(14);
+        letter-spacing: 0.21em;
+        margin-bottom: rem(5);
+    }
+}
+
+.home__newsTxt{
+    font-size: rem(16);
+    line-height: 1.6;
+    font-weight: $semi-bold;
+
+    @include mq() {
+        font-size: rem(12);
+    }
+}
+
+.home__cars{
+    margin-top: rem(54);
+
+    @include mq() {
+        margin-top: rem(35);
+    }
+}
+
+
+.home__always{
+    margin-top: rem(98);
+
+    @include mq() {
+        margin-top: rem(60);
+    }
+}
+
+.home__locations{
+    padding-top: rem(40);
+    padding-bottom: rem(70);
+    background-color: $gray1;
+
+    @include mq() {
+        padding-top: rem(20);
+        padding-bottom: rem(40);
+    }
+}
+
+.home__locationsBody{
+    margin-top: rem(50);
+
+    @include mq() {
+        margin-top: rem(45);
+    }
+}
+
+.home__about{
+    padding-top: rem(40);
+    padding-bottom: rem(70);
+    background: $yellow2;
+
+    @include mq() {
+        padding-top: rem(20);
+        padding-bottom: rem(40);
+    }
+}
+
+.home__aboutBody{
+    display: flex;
+    margin-top: rem(50);
+
+    @include mq() {
+        margin-top: rem(30);
+        flex-direction: column;
+    }
+}
+
+.home__aboutImage{
+    width: 50%;
+
+    @include mq() {
+        width: 100%;
+    }
+}
+
+.home__aboutTxt{
+    width: 50%;
+    padding: rem(40) rem(60) rem(30);
+    background-color: $white;
+
+    @include mq() {
+        width: 100%;
+        padding: rem(18) rem(10);
+    }
+}
+
+.home__aboutDesc{
+    font-size: rem(18);
+    line-height: 1.6;
+    font-weight: $semi-bold;
+    margin-bottom: rem(30);
+
+    @include mq() {
+        font-size: rem(12);
+        margin: 0 rem(10) rem(12);
+    }
+}
+
+.home__aboutBtn{
+    max-width: rem(250);
+    margin-left: auto;
+
+    @include mq() {
+        max-width: unset;
+        margin: 0 auto;
+    }
+}
