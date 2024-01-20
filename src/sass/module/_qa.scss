@@ -15,7 +15,8 @@
     padding: rem(50);
     
     @include mq() {
-        margin-top: rem(26);
+        margin: rem(26) auto 0;
+        max-width: rem(600);
         padding: rem(10);
     }
 }
