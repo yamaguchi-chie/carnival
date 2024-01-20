@@ -1,0 +1,149 @@
+@use 'global' as *;
+
+.header{
+    
+
+    @include mq() {
+        
+    }
+}
+
+.header__inner{
+    position: relative;
+}
+
+.header__top{
+    height: rem(60);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rem(1) solid $black4;
+}
+
+.header__logo{
+    width: rem(117);
+}
+
+.header__right{
+    display: flex;
+    align-items: center;
+}
+
+.header__navList1{
+    display: flex;
+    align-items: center;
+    gap: rem(42);
+    padding-left: rem(54);
+    padding-right: rem(54);
+}
+
+.header__navItem1 span{
+    font-size: rem(14);
+    line-height: 1;
+    font-weight: $bold;
+    color: $black4;
+}
+
+.header__navList2{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: rem(32);
+    padding-left: rem(37);
+    padding-right: rem(50);
+    flex-shrink: 0;
+    border-left: rem(1) solid $black4;
+}
+
+.header__navItem2{
+    
+}
+
+.header__navItem2 a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__navItem2 span{
+    font-size: rem(10);
+    line-height: 1;
+    font-weight: $medium;
+    color: $black4;
+}
+
+.header__navIcon2{
+    height: rem(32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: rem(2);
+}
+
+.header__navDay .header__navIcon2{
+    width: rem(29);
+}
+
+.header__navLine .header__navIcon2{
+    width: rem(35);
+}
+
+.header__navMail{
+    margin-left: rem(-8);
+}
+.header__navMail .header__navIcon2{
+    width: rem(32);
+}
+
+.header__bottom{
+    height: rem(50);
+    border-bottom: rem(6) solid $yellow2;
+}
+
+.header__navList3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.header__navItem3{
+    width: rem(250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__navItem3 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__navItem3 span{
+    font-size: rem(18);
+    line-height: 1;
+    font-weight: $super-bold;
+    color: $red;
+}
+
+.header__navIcon3{
+    margin-right: rem(8);
+    fill: $red;
+}
+
+.header__navSearch .header__navIcon3{
+    width: rem(28);
+}
+
+.header__navBuy .header__navIcon3{
+    width: rem(27);
+}
+
+.header__navSupport .header__navIcon3{
+    width: rem(28);
+}
+
+.header__navCommunication .header__navIcon3{
+    width: rem(24);
+}
