@@ -84,7 +84,8 @@
 
     @include mq() {
         font-size: rem(14);
-        margin-bottom: rem(13);
+        line-height: 1.4;
+        margin-bottom: rem(12);
     }
 }
 
