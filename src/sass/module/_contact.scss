@@ -233,8 +233,8 @@
     content: "";
     width: rem(10);
     height: rem(14);
-    border-right: 3px solid $yellow3;
-    border-bottom: 3px solid $yellow3;
+    border-right: rem(3) solid $yellow3;
+    border-bottom: rem(3) solid $yellow3;
     position: absolute;
     left: rem(6);
     top: rem(2);
