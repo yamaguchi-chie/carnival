@@ -8,6 +8,43 @@
     }
 }
 
+.slide--car__outer{
+
+    @include mq() {
+        padding: 0;
+    }
+}
+
+.slide--car .swiper-wrapper{
+
+    @include mq() {
+        gap: 0;
+    }
+}
+
+.slide--car .swiper-slide{
+    @include mq() {
+        width: rem(200);
+        margin: 0 rem(8);
+    }
+}
+
+.slide--car .swiper-button-prev,
+.slide--car .swiper-button-next{
+    display: none;
+
+    @include mq() {
+        display: flex;
+    }
+}
+
+.slide--car .slide__bottom{
+
+    @include mq() {
+        margin-top: rem(40);
+    }
+}
+
 .slide__bottom{
     margin: rem(25) auto;
     display: flex;
@@ -35,10 +72,12 @@
     opacity: 1;
     border-radius: rem(5);
     transition: all .3s ease 0s;
+    margin: 0 rem(8);
 
     @include mq() {
         height: rem(7);
         width: rem(7);
+        margin: 0 rem(6);
     }
 }
 

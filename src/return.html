@@ -23,9 +23,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
   <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="assets/css/style.css" />
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script defer src="assets/js/script.js"></script>
 </head>
 <body>
@@ -222,28 +224,48 @@
 
         <div class="return__cars">
           <div class="inner">
-
             <div class="cars__title">
               <span class="label"></span>
               <p class="main">中古車<span class="sub">（リターンカー）</span></p>
             </div>
-            <ul class="cars__list">
-              <li class="cars__item">
-                <div class="cars__img">
-                  <img src="assets/images/home/cars.png" alt="">
-                </div>
-              </li>
-              <li class="cars__item">
-                <div class="cars__img">
-                  <img src="assets/images/home/cars.png" alt="">
-                </div>
-              </li>
-              <li class="cars__item u-desktop">
-                <div class="cars__img">
-                  <img src="assets/images/home/cars.png" alt="">
-                </div>
-              </li>
-            </ul>
+          </div>
+          <div class="inner slide--car__outer">
+            <div class="return__slide slide slide--car">
+              <div class="swiper swiper-cars">
+                <ul class="cars__list swiper-wrapper">
+                  <li class="cars__item swiper-slide">
+                    <div class="cars__img">
+                      <img src="assets/images/home/cars.png" alt="">
+                    </div>
+                  </li>
+                  <li class="cars__item swiper-slide">
+                    <div class="cars__img">
+                      <img src="assets/images/home/cars.png" alt="">
+                    </div>
+                  </li>
+                  <li class="cars__item swiper-slide">
+                    <div class="cars__img">
+                      <img src="assets/images/home/cars.png" alt="">
+                    </div>
+                  </li>
+                  <li class="cars__item swiper-slide u-mobile">
+                    <div class="cars__img">
+                      <img src="assets/images/home/cars.png" alt="">
+                    </div>
+                  </li>
+                  <li class="cars__item swiper-slide u-mobile">
+                    <div class="cars__img">
+                      <img src="assets/images/home/cars.png" alt="">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="slide__bottom">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
 
           </div>
         </div>
