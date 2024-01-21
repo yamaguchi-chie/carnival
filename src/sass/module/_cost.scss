@@ -90,6 +90,10 @@
     white-space: nowrap;
     border-bottom: rem(1) solid $black3;
     padding-bottom: rem(1);
+
+    @include mq() {
+        justify-content: center;
+    }
 }
 
 .cost__price .num{
