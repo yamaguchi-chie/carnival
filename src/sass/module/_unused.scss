@@ -35,6 +35,7 @@
 }
 
 .unused__slide .swiper-slide{
+    margin: 0 rem(21);
     
     @include mq() {
         width: rem(200);

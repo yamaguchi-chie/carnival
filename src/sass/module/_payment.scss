@@ -21,21 +21,16 @@
 
 .payment__list {
     display: flex;
-    gap: rem(30);
-    flex-wrap: wrap;
-    justify-content: center;
     margin-top: rem(20);
 
     @include mq() {
-        flex-wrap: unset;
-        justify-content: unset;
-        gap: 0;
         margin-top: rem(10);
     }
 }
 
 .payment__item{
     width: rem(300);
+    margin: 0 rem(15);
 
     @include mq() {
         width: rem(220);

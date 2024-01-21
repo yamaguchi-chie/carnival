@@ -16,22 +16,15 @@
 }
 
 .slide--car .swiper-wrapper{
+    gap: 0;
 
     @include mq() {
         gap: 0;
     }
 }
 
-.slide--car .swiper-button-prev,
-.slide--car .swiper-button-next{
-    display: none;
-
-    @include mq() {
-        display: flex;
-    }
-}
-
 .slide--car .slide__bottom{
+    margin-top: rem(60);
 
     @include mq() {
         margin-top: rem(40);
