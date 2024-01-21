@@ -12,8 +12,6 @@
 
     @include mq() {
         max-width: rem(600);
-        padding-left: rem(30);
-        padding-right: rem(30);
     }
 }
 
