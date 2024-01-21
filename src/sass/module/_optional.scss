@@ -125,6 +125,7 @@
     position: relative;
     z-index: 2;
     padding: rem(20) rem(35) rem(30);
+    
     @include mq() {
         padding: rem(63) rem(18) rem(15);
     }

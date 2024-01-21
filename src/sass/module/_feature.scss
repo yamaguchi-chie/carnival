@@ -14,27 +14,52 @@
 
 .feature__item{
     width: calc((100% - rem(21) * 2) / 3);
-    border: rem(2) solid $yellow2;
-    padding: rem(56) rem(32) rem(32);
     position: relative;
 
     @include mq() {
         width: 100%;
-        padding: rem(22) rem(18) rem(14);
     }
 }
 
 .feature__item::before{
     content: "";
-    width: rem(72);
-    height: rem(72);
-    display: block;
+    width: calc(100% - rem(4));
+    height: calc(100% - rem(4));
+    background: linear-gradient(135deg, transparent rem(55), $white 0) top left;
+    background-size: 100% 100%;
     position: absolute;
-    left: 0;
-    top: 0;
+    top: rem(2);
+    left: rem(2);
+    z-index: 1;
 
     @include mq() {
-        
+        background: linear-gradient(135deg, transparent rem(35), $white 0) top left;
+    }
+}
+
+.feature__item::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent rem(55.5), $yellow2 0) top left;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    @include mq() {
+        background: linear-gradient(135deg, transparent rem(35.5), $yellow2 0) top left;
+    }
+}
+
+.feature__inner{
+    position: relative;
+    z-index: 2;
+    padding: rem(56) rem(32) rem(32);
+
+    @include mq() {
+        padding: rem(22) rem(18) rem(14);
     }
 }
 
