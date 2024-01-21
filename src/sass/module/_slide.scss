@@ -22,13 +22,6 @@
     }
 }
 
-.slide--car .swiper-slide{
-    @include mq() {
-        width: rem(200);
-        margin: 0 rem(8);
-    }
-}
-
 .slide--car .swiper-button-prev,
 .slide--car .swiper-button-next{
     display: none;

@@ -46,13 +46,13 @@ var Swiper1 = new Swiper('.swiper-top', {
     waitForTransition: false,
   },*/
   pagination: {
-    el: '.swiper-pagination',
+    el: '.slide--top .swiper-pagination',
     clickable: true,
     type: 'bullets'
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.slide--top .swiper-button-next',
+    prevEl: '.slide--top .swiper-button-prev',
   },
 });
 
@@ -74,13 +74,13 @@ document.addEventListener('DOMContentLoaded', function() {
         centeredSlides: true, // アクティブなスライドを中央にする
         slidesPerView: "auto",// autoにする
         pagination: {
-            el: ".swiper-pagination",
+            el: ".slide--car .swiper-pagination",
             clickable: true,
             type: 'bullets'
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
+            nextEl: ".slide--car .swiper-button-next",
+            prevEl: ".slide--car .swiper-button-prev"
         },
     });
   }
