@@ -82,14 +82,57 @@
 
 .optional__item{
     width: calc((100% - rem(24)) / 2);
-    padding: rem(20) rem(35) rem(30);
-    background: #fff;
-    border: 2px solid $yellow2;
     position: relative;
 
     @include mq() {
         width: 100%;
+    }
+}
+
+.optional__item::before{
+    content: "";
+    width: calc(100% - rem(4));
+    height: calc(100% - rem(4));
+    background: linear-gradient(135deg, transparent rem(65), $white 0) top left;
+    background-size: 100% 100%;
+    position: absolute;
+    top: rem(2);
+    left: rem(2);
+    z-index: 1;
+
+    @include mq() {
+        background: linear-gradient(135deg, transparent rem(35), $white 0) top left;
+    }
+}
+
+.optional__item::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent rem(65.5), $yellow2 0) top left;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    @include mq() {
+        background: linear-gradient(135deg, transparent rem(35.5), $yellow2 0) top left;
+    }
+}
+
+.optional__inner{
+    position: relative;
+    z-index: 2;
+    padding: rem(20) rem(35) rem(30);
+    @include mq() {
         padding: rem(63) rem(18) rem(15);
+    }
+}
+
+.optional__item:nth-of-type(3) .optional__inner{
+    @include mq() {
+        padding-top: rem(42);
     }
 }
 
@@ -149,13 +192,6 @@
 
     @include mq() {
         right: rem(6);
-    }
-}
-
-.optional__item:nth-of-type(3){
-
-    @include mq() {
-        padding-top: rem(42);
     }
 }
 
