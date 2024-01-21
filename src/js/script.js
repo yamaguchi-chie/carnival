@@ -24,7 +24,7 @@ $('.accordion__q').on('click', function() {
 });
 
 jQuery(function ($) {
-
+//スマホメニュー
 $('.header__navSp').on('click', function() {
   var opened = 'is--opened';
   var active = 'is--active';
@@ -32,4 +32,25 @@ $('.header__navSp').on('click', function() {
   $('.header__navListSp').toggleClass(active);
   $('.header__navSp').toggleClass(opened);
 });
+});
+
+//swiper
+const mySwiper = new Swiper('.swiper', {
+  loop: true,
+  speed: 500,
+  grabCursor: true,
+  /*autoplay: { 
+    delay: 3000, 
+    disableOnInteraction: false,
+    waitForTransition: false,
+  },*/
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    type: 'bullets'
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });

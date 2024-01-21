@@ -1,6 +1,6 @@
 @use 'global' as *;
 
-.about{
+.home{
     
 
     @include mq() {
@@ -10,11 +10,11 @@
 
 .home__top{
     
-
     @include mq() {
-        
+
     }
 }
+
 
 .home__newsbox{
     padding: rem(10) rem(16) rem(10);
@@ -42,7 +42,7 @@
 .home__newsTxt{
     font-size: rem(16);
     line-height: 1.6;
-    font-weight: $semi-bold;
+    font-weight: $medium;
 
     @include mq() {
         font-size: rem(12);

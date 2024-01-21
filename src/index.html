@@ -23,9 +23,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
   <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="assets/css/style.css" />
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script defer src="assets/js/script.js"></script>
 </head>
 <body>
@@ -198,8 +200,37 @@
     <main>
 
       <div class="home__top">
-        <img class="u-desktop" src="assets/images/home/top1.jpg" alt="">
-        <img class="u-mobile" src="assets/images/home/top1--sp.jpg" alt="">
+        <div class="slide">
+          <div class="home__slide swiper">
+            <ul class="home__slideList swiper-wrapper">
+              <li class="home__slideItem swiper-slide">
+                <img class="u-desktop" src="assets/images/home/top1.jpg" alt="">
+                <img class="u-mobile" src="assets/images/home/top1--sp.jpg" alt="">
+              </li>
+              <li class="home__slideItem swiper-slide">
+                <img class="u-desktop" src="assets/images/home/top1.jpg" alt="">
+                <img class="u-mobile" src="assets/images/home/top1--sp.jpg" alt="">
+              </li>
+              <li class="home__slideItem swiper-slide">
+                <img class="u-desktop" src="assets/images/home/top1.jpg" alt="">
+                <img class="u-mobile" src="assets/images/home/top1--sp.jpg" alt="">
+              </li>
+              <li class="home__slideItem swiper-slide">
+                <img class="u-desktop" src="assets/images/home/top1.jpg" alt="">
+                <img class="u-mobile" src="assets/images/home/top1--sp.jpg" alt="">
+              </li>
+              <li class="home__slideItem swiper-slide">
+                <img class="u-desktop" src="assets/images/home/top1.jpg" alt="">
+                <img class="u-mobile" src="assets/images/home/top1--sp.jpg" alt="">
+              </li>
+            </ul>
+          </div>
+          <div class="slide__bottom">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
       </div>
 
 
