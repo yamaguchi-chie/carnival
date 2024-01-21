@@ -153,16 +153,19 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    gap: rem(50);
 }
 
 .header__navItem3{
-    width: rem(250);
+    height: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .header__navItem3 a{
+    width: 100%;
+    height: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
