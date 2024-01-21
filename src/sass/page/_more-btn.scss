@@ -25,6 +25,10 @@
     }
 }
 
+.more-btn:hover span {
+    color: $red;
+}
+
 .more-btn::before,
 .more-btn::after {
     content: "";
@@ -63,8 +67,8 @@
     color: $black1;
     font-size: rem(16);
     font-weight: $bold;
-    // text-align: center;
     transform: translateX(10%);
+    transition: all .3s ease 0s;
 
     @include mq() {
         transform: translateX(0);
