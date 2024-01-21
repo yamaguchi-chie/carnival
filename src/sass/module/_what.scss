@@ -43,7 +43,8 @@
 }
 
 .what__img{
-    width: rem(650);
+    max-width: rem(669);
+	width: calc(rem(669) / rem(960) * 100%);
     position: absolute;
     right: 0;
     bottom: 0;
@@ -51,6 +52,8 @@
     @include mq() {
         width: 100%;
         position: unset;
+        max-width: rem(600);
+        margin: 0 auto;
     }
 }
 
