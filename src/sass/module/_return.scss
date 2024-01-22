@@ -13,8 +13,6 @@
 
     @include mq() {
         max-width: rem(600);
-        padding-left: rem(30);
-        padding-right: rem(30);
     }
 }
 
@@ -33,6 +31,15 @@
 
     @include mq() {
         margin-top: rem(40);
+    }
+}
+
+.return__slide .swiper-slide{
+    margin: 0 rem(21);
+    
+    @include mq() {
+        width: rem(200);
+        margin: 0 rem(8);
     }
 }
 

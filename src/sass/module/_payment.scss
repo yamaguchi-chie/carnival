@@ -1,0 +1,298 @@
+@use 'global' as *;
+
+.payment{
+    position: relative;
+}
+
+.payment::after{
+    content: "";
+    width: 100%;
+    height: calc(100% - rem(280));
+    background-color: $gray1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    @include mq() {
+        height: calc(100% - rem(185));
+    }
+}
+
+.payment__list {
+    display: flex;
+    margin-top: rem(20);
+
+    @include mq() {
+        margin-top: rem(10);
+    }
+}
+
+.payment__item{
+    width: rem(300);
+    margin: 0 rem(15);
+
+    @include mq() {
+        width: rem(220);
+        margin: 0 rem(10);
+    }
+}
+
+.payment__top{
+    width: rem(300);
+    height: rem(300);
+    border-radius: rem(300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    position: relative;
+    margin-bottom: rem(8);
+
+    @include mq() {
+        width: rem(210);
+        height: rem(210);
+    }
+}
+
+.payment__img{
+    width: rem(230);
+
+    @include mq() {
+        width: rem(165);
+    }
+}
+
+.payment__head{
+    position: absolute;
+    top: rem(28);
+    left: rem(12);
+
+    @include mq() {
+        left: 0;
+    }
+}
+
+.payment__brand{
+    height: rem(15);
+    margin-bottom: rem(12);
+
+    @include mq() {
+        height: rem(11);
+        margin-bottom: rem(8);
+    }
+}
+
+.payment__brand img{
+    width: auto;
+    height: 100%;
+}
+
+.payment__name{
+    font-size: rem(20);
+    line-height: 1;
+    font-weight: $bold;
+    margin-bottom: rem(4);
+
+    @include mq() {
+        font-size: rem(14);
+        margin-bottom: rem(2);
+    }
+}
+
+.payment__alphabet{
+    font-size: rem(16);
+    line-height: 1;
+    font-weight: $bold;
+
+    @include mq() {
+        font-size: rem(11);
+    }
+}
+
+.payment__middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment__cat{
+    font-size: rem(18);
+    line-height: 1;
+    font-weight: $bold;
+    color: $red;
+    margin-right: rem(18);
+
+    @include mq() {
+        font-size: rem(13.5);
+        margin-right: rem(13.5);
+    }
+}
+
+.payment__interest{
+    display: flex;
+    align-items: center;
+}
+
+.payment__interest dt{
+    font-size: rem(18);
+    line-height: 1;
+    font-weight: $bold;
+    margin-right: rem(4);
+
+    @include mq() {
+        font-size: rem(13.5);
+        margin-right: rem(2.5);
+    }
+}
+
+.payment__interest dd{
+    font-size: rem(30);
+    line-height: 1;
+    font-weight: $bold;
+    color: $red;
+    margin-bottom: rem(4);
+
+    @include mq() {
+        font-size: rem(22.5);
+    }
+}
+
+.payment__interest dd span{
+    font-size: rem(18);
+
+    @include mq() {
+        font-size: rem(13.5);
+    }
+}
+
+.payment__bottom{
+    padding: rem(12) 0 rem(8);
+    border-top: rem(1) solid $black3;
+    border-bottom: rem(1) solid $black3;
+
+    @include mq() {
+        padding: rem(8) 0 rem(6);
+    }
+}
+
+.payment__hontai{
+    font-size: rem(16);
+    line-height: 1;
+    font-weight: $bold;
+    text-align: center;
+    margin-bottom: rem(8);
+
+    @include mq() {
+        font-size: rem(12);
+        margin-bottom: rem(4);
+    }
+}
+
+.payment__labels{
+    display: flex;
+    gap: rem(5);
+    justify-content: center;
+    margin-bottom: rem(8);
+
+    @include mq() {
+        gap: rem(4);
+    }
+}
+
+.payment__label{
+    font-size: rem(16);
+    line-height: 1;
+    font-weight: $bold;
+    color: $white;
+    background-color: $red;
+    height: rem(24);
+    display: flex;
+    align-items: center;
+    padding: 0 rem(4);
+    white-space: nowrap;
+
+    @include mq() {
+        font-size: rem(12);
+        height: rem(18);
+        padding: 0 rem(3);
+    }
+}
+
+.payment__label.plan span{
+    font-size: rem(20);
+    margin-right: rem(2);
+
+    @include mq() {
+        font-size: rem(15);
+        margin-right: rem(1);
+    }
+}
+
+.payment__label.atama span{
+    font-size: rem(25);
+    margin: 0 rem(3) rem(1);
+
+    @include mq() {
+        font-size: rem(19);
+        margin: 0 rem(2);
+    }
+}
+
+.payment__price{
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: rem(2);
+}
+
+.payment__price .tsuki{
+    font-size: rem(18);
+    font-weight: $bold;
+
+    @include mq() {
+        font-size: rem(13.5);
+    }
+}
+
+.payment__price .num{
+    font-family: $third-font-family;
+    font-size: rem(46);
+    font-weight: $bold;
+    margin: 0 rem(4);
+
+    @include mq() {
+        font-size: rem(34.5);
+        margin: 0 rem(3);
+    }
+}
+
+.payment__price .yen{
+    font-size: rem(20);
+    font-weight: $bold;
+
+    @include mq() {
+        font-size: rem(15);
+    }
+}
+
+.payment__price .tax{
+    font-size: rem(16);
+    font-weight: $medium;
+
+    @include mq() {
+        font-size: rem(12);
+    }
+}
+
+.payment__bonus{
+    font-size: rem(16);
+    line-height: 1;
+    font-weight: $medium;
+    text-align: center;
+
+    @include mq() {
+        font-size: rem(12);
+    }
+}

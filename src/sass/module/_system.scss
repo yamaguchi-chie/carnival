@@ -171,7 +171,6 @@
     position: relative;
 
     @include mq() {
-        width: calc((170 / 280) * 100%);
         margin-bottom: rem(42);
     }
 }
@@ -204,7 +203,7 @@
     transform: translateY(-50%) rotate(180deg);
 
     @include mq() {
-        right: rem(-25);
+        right: rem(-30);
     }
 }
 

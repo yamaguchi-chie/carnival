@@ -9,12 +9,9 @@
 }
 
 .inner.insurance__inner{
-    max-width: rem(930);
 
     @include mq() {
         max-width: rem(600);
-        padding-left: rem(30);
-        padding-right: rem(30);
     }
 }
 

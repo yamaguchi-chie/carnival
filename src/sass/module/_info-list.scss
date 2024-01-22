@@ -1,9 +1,9 @@
 @use 'global' as *;
 
 .info-list__item {
-    border-top: 1.5px solid $gray4;
+    border-top: rem(1.5) solid $gray4;
 }
 
 .info-list__item:last-child {
-    border-bottom: 1.5px solid $gray4;
+    border-bottom: rem(1.5) solid $gray4;
 }

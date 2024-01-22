@@ -51,13 +51,13 @@
 }
 
 .cost__img{
-    height: rem(120);
+    aspect-ratio: 257/133;
     display: flex;
     align-items: center;
     margin-bottom: rem(8);
 
     @include mq() {
-        height: rem(80);
+        
     }
 }
 
@@ -90,6 +90,10 @@
     white-space: nowrap;
     border-bottom: rem(1) solid $black3;
     padding-bottom: rem(1);
+
+    @include mq() {
+        justify-content: center;
+    }
 }
 
 .cost__price .num{

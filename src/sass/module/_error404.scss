@@ -49,6 +49,7 @@
     margin-bottom: rem(94);
 
     @include mq() {
+        align-items: unset;
         flex-direction: column;
         margin-bottom: rem(32);
     }
@@ -70,6 +71,7 @@
 
     @include mq() {
         width: rem(184);
+        margin: 0 auto;
     }
 }
 

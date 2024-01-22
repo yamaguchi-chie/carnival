@@ -1,0 +1,386 @@
+@use 'global' as *;
+
+.header{
+    position: sticky;
+    top: 0;
+    background-color: $white;
+    border-bottom: rem(6) solid $yellow2;
+    z-index: 99;
+
+
+    @include mq() {
+        
+    }
+}
+
+.header__inner{
+    position: relative;
+}
+
+.header__top{
+    height: rem(60);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rem(1) solid $black4;
+
+    @include mq() {
+        height: rem(42);
+        border: 0;
+    }
+}
+
+.header__logo{
+    width: rem(117);
+
+    @include mq() {
+        width: rem(82);
+    }
+}
+
+.header__right{
+    display: flex;
+    align-items: center;
+}
+
+.header__navList1{
+    display: flex;
+    align-items: center;
+    gap: rem(42);
+    padding-left: rem(54);
+    padding-right: rem(54);
+
+    @include mq() {
+        display: none;
+    }
+}
+
+.header__navItem1 span{
+    font-size: rem(14);
+    line-height: 1;
+    font-weight: $bold;
+    color: $black4;
+}
+
+.header__navList2{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: rem(32);
+    padding-left: rem(37);
+    padding-right: rem(50);
+    flex-shrink: 0;
+    border-left: rem(1) solid $black4;
+
+    @include mq() {
+        gap: rem(22);
+        padding-left: 0;
+        padding-right: rem(24);
+        border: 0;
+    }
+}
+
+.header__navItem2{
+    
+}
+
+.header__navItem2 a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__navItem2 span{
+    font-size: rem(10);
+    line-height: 1;
+    font-weight: $medium;
+    color: $black4;
+
+    @include mq() {
+        display: none;
+    }
+}
+
+.header__navIcon2{
+    height: rem(32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: rem(2);
+}
+
+.header__navDay .header__navIcon2{
+    width: rem(29);
+
+    @include mq() {
+        width: rem(21);
+    }
+}
+
+.header__navLine .header__navIcon2{
+    width: rem(35);
+
+    @include mq() {
+        width: rem(25);
+    }
+}
+
+.header__navMail{
+    margin-left: rem(-8);
+
+    @include mq() {
+        margin-left: 0;
+    }
+}
+.header__navMail .header__navIcon2{
+    width: rem(32);
+
+    @include mq() {
+        width: rem(23);
+    }
+}
+
+.header__bottom{
+    height: rem(50);
+
+    @include mq() {
+        display: none;
+    }
+}
+
+.header__navList3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: rem(50);
+}
+
+.header__navItem3{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__navItem3 a{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__navItem3 span{
+    font-size: rem(18);
+    line-height: 1;
+    font-weight: $super-bold;
+    color: $red;
+}
+
+.header__navIcon3{
+    display: flex;
+    align-items: center;
+    margin-right: rem(8);
+    
+}
+
+.header__navIcon3 svg path,
+.header__navIcon3 svg rect{
+    fill: $red;
+}
+
+.header__navSearch .header__navIcon3 svg{
+    width: rem(28);
+}
+
+.header__navBuy .header__navIcon3 svg{
+    width: rem(27);
+}
+
+.header__navSupport .header__navIcon3 svg{
+    width: rem(28);
+}
+
+.header__navCommunication .header__navIcon3 svg{
+    width: rem(24);
+}
+
+.header__navSp{
+    display: none;
+
+    @include mq() {
+        display: flex;
+        width: rem(56);
+        height: rem(42);
+        align-items: center;
+        justify-content: center;
+        background-color: $black2;
+    }
+}
+
+.header__navBtn{
+    width: rem(27);
+    height: rem(18);
+    position: relative;
+}
+
+.header__navBtn span{
+    width: rem(27);
+    height: rem(3);
+    background-color: $white;
+    display: block;
+    position: absolute;
+    left: 0;
+    transition: all .3s ease 0s;
+}
+
+.header__navBtn span:nth-of-type(1){
+    top: 0;
+}
+
+.header__navBtn span:nth-of-type(2){
+    top: rem(7.5);
+}
+
+.header__navBtn span:nth-of-type(3){
+    top: rem(15);
+}
+
+.is--opened .header__navBtn span:nth-of-type(1){
+    transform: translateY(rem(7.5)) rotate(-45deg);
+}
+
+.is--opened .header__navBtn span:nth-of-type(2){
+    opacity: 0;
+}
+
+.is--opened .header__navBtn span:nth-of-type(3){
+    transform: translateY(rem(-7.5)) rotate(45deg);
+}
+
+.header__navListSp{
+    display: none;
+
+    @include mq() {
+        display: block;
+        position: fixed;
+        background-color: $black2;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        padding: rem(50) rem(20) rem(40);
+        overflow: scroll;
+        opacity: 0;
+        pointer-events: none;
+        transition: all .3s ease 0s;
+    }    
+}
+
+.header__navListSp.is--active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.header__navListSp .header__navSp{
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.header__navScroll{
+    overflow: scroll;
+}
+
+.header__navListSp1{
+    display: flex;
+    flex-direction: column;
+    gap: rem(19);
+    margin: 0 rem(10);
+}
+
+.header__navItemSp1{
+    
+}
+
+.header__navItemSp1 > a{
+    display: flex;
+    align-items: center;
+}
+
+.header__navItemSp1 span{
+    font-size: rem(16);
+    line-height: 1;
+    font-weight: $super-bold;
+    color: $yellow2;
+}
+
+.header__navIconSp1{
+    width: rem(25);
+    margin-right: rem(8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__navIconSp1 svg path,
+.header__navIconSp1 svg rect{
+    fill: $yellow2;
+}
+
+.header__navSearch .header__navIconSp1 svg{
+    width: rem(25);
+}
+
+.header__navBuy .header__navIconSp1 svg{
+    width: rem(24);
+}
+
+.header__navSupport .header__navIconSp1 svg{
+    width: rem(24);
+}
+
+.header__navCommunication .header__navIconSp1 svg{
+    width: rem(21);
+}
+
+.header__navListSp2{
+    margin: rem(5) rem(33) 0;
+}
+
+.header__navItemSp2 span{
+    font-size: rem(14);
+    line-height: 2;
+    font-weight: $semi-bold;
+    color: $white;
+}
+
+.header__navBorder{
+    width: 100%;
+    height: rem(1);
+    background-color: $white;
+    margin: rem(28) 0 rem(25);
+}
+
+.header__navListSp3{
+    margin: 0 rem(10);
+}
+
+.header__navListSp3 span{
+    font-size: rem(14);
+    line-height: 2;
+    font-weight: $super-bold;
+    color: $white;
+}
+
+.header__navListSp4{
+    margin: rem(5) rem(30);
+}
+.header__navListSp4 span{
+    font-size: rem(12);
+    line-height: 2;
+    font-weight: $semi-bold;
+    color: $white;
+}

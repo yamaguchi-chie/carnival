@@ -1,10 +1,11 @@
 @use 'global' as *;
 
 .contact{
-    margin-bottom: rem(186);
+    padding-bottom: rem(186);
+    border-bottom: rem(1) solid $black3;
 
     @include mq() {
-        margin-bottom: rem(70);
+        padding-bottom: rem(70);
     }
 }
 
@@ -185,6 +186,20 @@
     }
 }
 
+.contact__agreement input[type=checkbox]{
+    display: block;
+    position: absolute;
+    opacity: 0;
+    width: rem(22);
+    height: rem(22);
+    margin: 0;
+
+    @include mq() {
+        width: rem(16);
+        height: rem(16);
+    }
+}
+
 .contact__agreement label{
     font-size: rem(18);
     line-height: 1;
@@ -218,8 +233,8 @@
     content: "";
     width: rem(10);
     height: rem(14);
-    border-right: 3px solid $yellow3;
-    border-bottom: 3px solid $yellow3;
+    border-right: rem(3) solid $yellow3;
+    border-bottom: rem(3) solid $yellow3;
     position: absolute;
     left: rem(6);
     top: rem(2);

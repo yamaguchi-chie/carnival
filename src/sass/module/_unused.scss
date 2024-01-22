@@ -13,8 +13,6 @@
 
     @include mq() {
         max-width: rem(600);
-        padding-left: rem(30);
-        padding-right: rem(30);
     }
 }
 
@@ -36,6 +34,15 @@
     }
 }
 
+.unused__slide .swiper-slide{
+    margin: 0 rem(21);
+    
+    @include mq() {
+        width: rem(200);
+        margin: 0 rem(8);
+    }
+}
+
 .unused__pros-cons{
     margin-top: rem(160);
 
@@ -43,8 +50,6 @@
         margin-top: rem(90);
     }
 }
-
-
 
 .unused__flow{
     margin-top: rem(120);

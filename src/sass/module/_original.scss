@@ -67,7 +67,7 @@
 }
 
 .original__item:nth-of-type(1) .original__img{
-    width: calc((480 / 280) * 100%);
+    width: calc((480 / 880) * 100%);
     margin-right: rem(-40);
 
     @include mq() {

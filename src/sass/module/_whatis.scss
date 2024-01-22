@@ -12,6 +12,8 @@
 
     @include mq() {
         font-size: rem(14);
+        margin-left: rem(13);
+        margin-right: rem(13);
     }
 }
 
@@ -35,6 +37,8 @@
     @include mq() {
         margin-top: rem(15);
         margin-bottom: rem(60);
+        margin-left: rem(13);
+        margin-right: rem(13);
     }
 }
 

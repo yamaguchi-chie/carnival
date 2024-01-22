@@ -9,6 +9,13 @@
     }
 }
 
+.loan__inner{
+
+    @include mq() {
+        max-width: rem(600);
+    }
+}
+
 .loan__body{
     display: flex;
     gap: rem(12);
@@ -18,6 +25,7 @@
     @include mq() {
         flex-direction: column;
         gap: rem(21);
+
     }
 }
 

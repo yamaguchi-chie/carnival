@@ -1,0 +1,119 @@
+@use 'global' as *;
+
+.slide {
+    
+
+    @include mq() {
+        
+    }
+}
+
+.slide--car__outer{
+
+    @include mq() {
+        padding: 0;
+    }
+}
+
+.slide--car .swiper-wrapper{
+    gap: 0;
+
+    @include mq() {
+        gap: 0;
+    }
+}
+
+.slide--car .slide__bottom{
+    margin-top: rem(60);
+
+    @include mq() {
+        margin-top: rem(40);
+    }
+}
+
+.slide__bottom{
+    margin: rem(25) auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: rem(25);
+
+    @include mq() {
+        margin: rem(14) auto rem(25);
+        gap: rem(15);
+    }
+}
+
+.slide__bottom .swiper-pagination{
+    position: unset;
+    width: unset;
+    display: flex;
+}
+
+.slide__bottom .swiper-pagination-bullet{
+    height: rem(10);
+    width: rem(10);
+    background-color: $border-gray;
+    opacity: 1;
+    border-radius: rem(5);
+    transition: all .3s ease 0s;
+    margin: 0 rem(8);
+
+    @include mq() {
+        height: rem(7);
+        width: rem(7);
+        margin: 0 rem(6);
+    }
+}
+
+.slide__bottom .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 rem(8);
+
+    @include mq() {
+        margin: 0 rem(6);
+    }
+}
+
+.slide__bottom .swiper-pagination-bullet-active{
+    width: rem(26);
+    background-color: $yellow3;
+
+    @include mq() {
+        width: rem(18);
+    }
+}
+
+.slide__bottom .swiper-button-prev,
+.slide__bottom .swiper-button-next{
+    position: unset;
+    width: rem(10);
+    height: rem(15);
+    margin: 0;
+
+    @include mq() {
+        width: rem(8);
+        height: rem(12);
+    }
+}
+
+.slide__bottom .swiper-button-prev::after,
+.slide__bottom .swiper-button-next::after{
+    content: "";
+    width: rem(10);
+    height: rem(15);
+
+    @include mq() {
+        width: rem(8);
+        height: rem(12);
+    }   
+}
+
+.slide__bottom .swiper-button-prev::after{
+    background: transparent url(../images/common/ico-prev.svg) no-repeat center center / contain;
+}
+
+.slide__bottom .swiper-button-next::after{
+    background: transparent url(../images/common/ico-next.svg) no-repeat center center / contain;
+}
+

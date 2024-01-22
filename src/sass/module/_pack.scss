@@ -14,8 +14,9 @@
     margin-bottom: rem(45);
 
     @include mq() {
+        max-width: rem(280);
         padding: rem(10);
-        margin-bottom: rem(30);
+        margin: 0 auto rem(30);
     }
 }
 
@@ -55,11 +56,10 @@
 
     @include mq() {
         top: 0;
-        left: 50%;
+        left: rem(-30);
         display: flex;
-        justify-content: center;
-        transform: translateX(-50%);
-        gap: rem(7);
+        transform: unset;
+        gap: rem(8);
     }
 }
 
