@@ -37,7 +37,7 @@ $('.header__navSp').on('click', function() {
 //swiper
 var Swiper1 = new Swiper('.swiper-top', {
   loop: true,
-  loopAdditionalSlides: 1,
+  loopAdditionalSlides: 2,
   speed: 500,
   grabCursor: true,
   /*autoplay: { 
@@ -58,7 +58,7 @@ var Swiper1 = new Swiper('.swiper-top', {
 
 var Swiper2 = new Swiper('.swiper-cars', {
   loop: true,
-  loopAdditionalSlides: 1,
+  loopAdditionalSlides: 2,
   speed: 500,
   grabCursor: true,
   /*autoplay: { 
