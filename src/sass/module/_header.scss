@@ -179,23 +179,30 @@
 }
 
 .header__navIcon3{
+    display: flex;
+    align-items: center;
     margin-right: rem(8);
+    
+}
+
+.header__navIcon3 svg path,
+.header__navIcon3 svg rect{
     fill: $red;
 }
 
-.header__navSearch .header__navIcon3{
+.header__navSearch .header__navIcon3 svg{
     width: rem(28);
 }
 
-.header__navBuy .header__navIcon3{
+.header__navBuy .header__navIcon3 svg{
     width: rem(27);
 }
 
-.header__navSupport .header__navIcon3{
+.header__navSupport .header__navIcon3 svg{
     width: rem(28);
 }
 
-.header__navCommunication .header__navIcon3{
+.header__navCommunication .header__navIcon3 svg{
     width: rem(24);
 }
 
@@ -318,19 +325,24 @@
     justify-content: center;
 }
 
-.header__navSearch .header__navIconSp1{
+.header__navIconSp1 svg path,
+.header__navIconSp1 svg rect{
+    fill: $yellow2;
+}
+
+.header__navSearch .header__navIconSp1 svg{
     width: rem(25);
 }
 
-.header__navBuy .header__navIconSp1{
+.header__navBuy .header__navIconSp1 svg{
     width: rem(24);
 }
 
-.header__navSupport .header__navIconSp1{
+.header__navSupport .header__navIconSp1 svg{
     width: rem(24);
 }
 
-.header__navCommunication .header__navIconSp1{
+.header__navCommunication .header__navIconSp1 svg{
     width: rem(21);
 }
 
